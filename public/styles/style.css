@@ -1,0 +1,1089 @@
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+
+body.loaded .poem-container {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Classe de base */
+.hidden-element {
+  opacity: 1; /* Complètement visible */
+  visibility: visible; /* Élément visible */
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Transition fluide */
+}
+
+/* Classe pour masquer l'élément */
+.hidden-element.hide {
+  opacity: 0; /* Rendre invisible visuellement */
+  visibility: hidden; /* Cacher l'élément après l'animation */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  top:96px;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  padding: 2%;
+  background-image: url('/img/background.webp'); /* Chemin de votre image */
+  background-size: cover; /* L'image occupe toute la fenêtre */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-position: center; /* Centre l'image dans la fenêtre */
+  height: 100vh;
+}
+
+.d-flex {
+  height: -webkit-fill-available;
+}
+
+/* Header principal */
+header {
+  height: 112px;
+  width:-webkit-fill-available;
+  color: #fdf8f2; 
+  padding: 1rem 2rem;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background: linear-gradient(to right, #2C3E50, #4b5d67);
+}
+
+/* Titre en style calligraphié */
+header h1 {
+  margin: 0;
+  font-size: 2.7rem; /* Texte plus grand pour plus d'impact */
+  font-family: 'Dancing Script', cursive; /* Police calligraphique */
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Effet d'ombre élégante */
+  color: white; /* Ton chaud orangé pour contraster */
+  /*animation: fadeInZoom 2s ease-out, textGlow 3s infinite alternate ease-in-out;*/
+  animation: fadeInTitle 2s ease-out;
+}
+
+/* Conteneur pour la citation */
+#daily-quote {
+  font-family: "Dancing Script", cursive; /* Utiliser une police élégante */
+  font-style: italic;
+  font-size: 1.1rem; /* Taille discrète mais lisible */
+  color: #ffd700; /* Couleur neutre et douce */
+  text-align: center;
+  margin-top: 10px; /* Espacement sous le titre */
+  opacity: 0; /* Pour l'effet de fondu */
+  animation: citatiofadeIn 1.5s ease-in-out forwards;
+}
+
+/* Style des onglets */
+.tabs-container .nav-tabs {
+  border: none; /* Retirer la bordure par défaut */
+  margin: 0; 
+  padding: 0; 
+}
+
+#headerTabsContent{
+  overflow-y: auto;
+}
+
+#headerTabsContent::-webkit-scrollbar {
+  width: 1px; /* Largeur de la scrollbar */
+  border-radius: 1px; /* Arrondir les bords de la scrollbar */
+}
+
+#headerTabsContent::-webkit-scrollbar-track {
+  background: #f8f5ec; /* Couleur douce pour l'arrière-plan de la scrollbar */
+  border-radius: 1px; /* Arrondir les bords de la piste */
+}
+
+#headerTabsContent::-webkit-scrollbar-thumb {
+  background: #2C3E50; /* Couleur marron pour correspondre à l'esthétique générale */
+  border-radius: 1px; /* Coins arrondis pour un style cohérent */
+  border: 1px solid #f8f5ec; /* Ajouter un contour pour un effet contrasté */
+}
+
+/* Hover effect on the scrollbar thumb */
+#headerTabsContent::-webkit-scrollbar-thumb:hover {
+  background: #ffd700; /* Accentuer la couleur au survol */
+}
+
+.nav-tabs .nav-link {
+  font-family: "Dancing Script", cursive;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+  border-radius: 50px; /* Bordures arrondies pour un look moderne */
+  font-weight: bold;
+  padding: 10px 25px; /* Espacement généreux */
+  margin-right: 5px; /* Espacement entre les onglets */
+  transition: all 0.4s ease; /* Transition fluide */
+}
+
+.nav-tabs .nav-link.active {
+  color: #f0e9e2 !important;
+  background-color: #3a4a52 !important;
+  border: 2px solid #f0e9e2; /* Ajout de la bordure active */
+}
+
+.nav-tabs .nav-link:hover {
+  color: #f0e9e2;
+  background-color: #4b5d67; /* Couleur plus sombre au survol */
+  transform: scale(1.05); /* Léger zoom au survol */
+}
+
+.poem-text h2{
+  font-size: 1.5rem; /* Texte plus grand pour plus d'impact */
+  font-family: 'Dancing Script', cursive; /* Police calligraphique */
+  font-weight: 700;
+}
+
+.poem-text p {
+  font-size: 1.2rem; /* Texte plus grand pour plus d'impact */
+  font-family: 'Dancing Script', cursive; /* Police calligraphique */
+  font-weight: 300;
+}
+
+/* Animation de fondu */
+@keyframes citatiofadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Légère montée */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation de zoom + opacité */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Barre latérale */
+
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+  height: 100%;
+  background-color: #3a2e2e;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  transition: all 0.5s ease;
+  z-index:1;
+  overflow: auto;
+  background: linear-gradient(to bottom, #3a2e2e, #3b3c3d);
+
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 1px; /* Largeur de la scrollbar */
+  border-radius: 1px; /* Arrondir les bords de la scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f8f5ec; /* Couleur douce pour l'arrière-plan de la scrollbar */
+  border-radius: 1px; /* Arrondir les bords de la piste */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #2C3E50; /* Couleur marron pour correspondre à l'esthétique générale */
+  border-radius: 1px; /* Coins arrondis pour un style cohérent */
+  border: 1px solid #f8f5ec; /* Ajouter un contour pour un effet contrasté */
+}
+
+/* Hover effect on the scrollbar thumb */
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #ffd700; /* Accentuer la couleur au survol */
+}
+
+.sidebar:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Accentuer l'ombre au survol */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Légèrement plus lumineuse */
+}
+
+/* Style pour la barre de défilement */
+#poemList::-webkit-scrollbar {
+  width: 10px; /* Largeur de la scrollbar */
+  border-radius: 10px; /* Arrondir les bords de la scrollbar */
+}
+
+#poemList::-webkit-scrollbar-track {
+  background: #f8f5ec; /* Couleur douce pour l'arrière-plan de la scrollbar */
+  border-radius: 10px; /* Arrondir les bords de la piste */
+}
+
+#poemList::-webkit-scrollbar-thumb {
+  background: #2C3E50; /* Couleur marron pour correspondre à l'esthétique générale */
+  border-radius: 10px; /* Coins arrondis pour un style cohérent */
+  border: 1px solid #f8f5ec; /* Ajouter un contour pour un effet contrasté */
+}
+
+/* Hover effect on the scrollbar thumb */
+#poemList::-webkit-scrollbar-thumb:hover {
+  background: #ffd700; /* Accentuer la couleur au survol */
+}
+
+.sidebar-title{
+
+  width: 100%;
+  height: 50px;
+  text-align: -webkit-center;
+  padding: 5px;
+  font-size: 2rem; /* Texte plus grand pour plus d'impact */
+  font-family: 'Dancing Script', cursive; /* Police calligraphique */
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.search-container {
+  padding: 15px 0px 0px 5px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.search {
+  width: 225px;
+}
+
+.sidebar-search {
+  width: -webkit-fill-available;
+  display: inline;
+}
+
+/* Style des champs de recherche */
+input[type="text"] {
+
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.3rem;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #ffcc99; /* Accentuer avec une couleur thème */
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px rgba(255, 204, 153, 0.6);
+}
+
+.clear-title-button {
+  top: 37%;
+}
+
+.clear-poem-button {
+  top: 81%;
+}
+
+.clear-button {
+  position: absolute;
+  right: 21px;
+  transform: translateY(-100%);
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 900;
+  display: none; /* Par défaut, la croix est cachée */
+}
+
+.clear-button:hover {
+  color: #ffcc99;
+}
+
+
+@keyframes slideIn {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -300px;
+  }
+}
+
+#poemList {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.random-poem-button-container {
+  margin: 10px 0;
+  justify-content: center;
+  display: flex
+
+}
+/* Découverte aléatoire bouton */
+#randomPoemButton {
+  display: block;
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  background: linear-gradient(to right, #ffd700, #8c5e3c);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#randomPoemButton:hover {
+  background: linear-gradient(to right, #8c5e3c, #ffd700);
+  color: #fff;
+}
+
+
+/* Liste des poèmes */
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+  margin-top: 1rem; 
+  margin-bottom: 3rem; /* Espace pour le bouton */
+}
+
+.sidebar ul li {
+  font-family: 'Dancing Script', cursive; /* Police calligraphique */
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Style de base des titres dans la barre latérale */
+.sidebar-title-link {
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: 'Georgia', serif;
+  color: #fdf8f2; /* Couleur claire */
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.3rem 0;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+
+}
+
+/* Effet de survol pour changer la couleur */
+.sidebar-title-link:hover {
+  color: #e1e6eb;
+  transform: scale(1.05);
+}
+
+/* Ajout d'un soulignement animé */
+.sidebar-title-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e1e6eb; /* Ligne animée au survol */
+  transition: width 0.3s ease-in-out;
+}
+
+
+/* Poème sélectionné */
+.sidebar-title-selected {
+  color: #FFD700;
+  font-weight: bold; /* Renforce la mise en avant */
+  position: relative;
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8); /* Ajout d'une lueur subtile */
+  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Indicateur animé actif */
+.sidebar-title-selected::after {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90%; /* Toujours présent pour l'élément sélectionné */
+  height: 2px;
+  background: linear-gradient(90deg, #FFD700, #FFC200); /* Dégradé lumineux */
+  box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8); /* Lueur autour de la ligne */
+  transition: width 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Effet fluide */
+}
+
+/* Étendre la ligne au survol (uniquement pour hover) */
+.sidebar-title-link:hover::after {
+  background: linear-gradient(90deg, #FFD700, #FFC200);
+  width: 90%; /* Étend sur toute la largeur */
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 1); /* Accentue la lueur au survol */
+}
+
+/* Effet hover général pour tous les liens */
+.sidebar-title-link:hover {
+  color: #FFD700; /* Doré clair avec un effet chaleureux */
+  text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.8);/* Lueur légère */
+}
+
+.music-player {
+  
+  background: linear-gradient(to right, rgba(255, 223, 186, 0.9), rgba(255, 203, 107, 0.8));
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  color: #2C3E50;
+
+}
+
+.track-info {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.track-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.track-artist {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #2C3E50;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background: #ffcc00;
+  transition: width 0.5s ease;
+}
+
+
+
+
+.toggled {
+  right: 270px !important;
+}
+
+/* Animation de zoom-in */
+@keyframes zoomIn {
+  0% {
+      transform: scale(0.5); /* Taille réduite au début */
+      opacity: 0; /* Invisible au début */
+  }
+  50% {
+      opacity: 0.5; /* Apparition progressive */
+  }
+  100% {
+      transform: scale(1); /* Taille normale à la fin */
+      opacity: 1; /* Complètement visible */
+  }
+}
+
+#burger-btn {
+  position: absolute;
+  right: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#logo-icon {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#logo-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+/* Animation lumineuse */
+#burger-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+
+/* Quand l'utilisateur clique */
+#burger-btn.active #logo-icon {
+  transform: scale(1.1); /* Légère mise en avant */
+  filter: brightness(1.3); /* Accentuer la lumière */
+}
+
+#burger-btn.active::after {
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+
+/* Animation des lignes décoratives */
+@keyframes slideLine {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(150%);
+  }
+}
+
+.poem-section {
+  flex: 3; /* Occupe plus d'espace */
+  text-align: -webkit-center;
+}
+
+/* Conteneur principal */
+#wordMapContainer {
+  position: relative;
+  height: 400px;
+}
+
+.word-bubble {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #ffffff, #ddd);
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #2C3E50;
+  cursor: pointer;
+}
+
+
+@keyframes combinedAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  50% {
+    transform: translate(5px, -5px); /* Expansion + Rotation */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); /* Final State */
+  }
+}
+
+.word-bubble span {
+  opacity: 0;
+  animation: textAppear 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.selected-theme {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background: radial-gradient(circle, #ffe6cc, #ffcc99);
+  transform: scale(1.2);
+}
+
+.word-bubble:hover {
+  transform: scale(1.1) translate(0, 0);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background: radial-gradient(circle, #ffe6cc, #ffcc99);
+}
+
+/* Animation des bulles pour leur donner un mouvement subtil */
+
+
+
+@keyframes rotateParticles {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+  
+.poem-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.poem-container:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.poem-container:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.poem-container:nth-child(3) {
+  transition-delay: 0.6s;
+}
+  
+.poem-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+  
+}
+  
+.poem-container:hover .poem-image {
+  transform: translateY(0%);
+  cursor: pointer;
+}
+  
+.poem-text {
+  position: absolute;
+  bottom: 57px;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(41, 38, 38, 0.8); /* Semi-transparent marron.*/
+  color: #fdf8f2;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  mask-image: linear-gradient(to top, transparent 55%, black 95%);
+}
+  
+.poem-container:hover .poem-text {
+  transform: translateY(85%);
+}
+
+.modal {
+
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out !important;
+  z-index: 3;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-size: cover; /* L'image occupe toute la fenêtre */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+  background-position: center;
+
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal:not(.show) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  max-height: 80vh;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.modal-content p {
+  margin-top: 1rem;
+  color: #333;
+}
+
+.modal.show {
+  display: flex;
+}
+
+/* Appliquer le style uniquement à la modale */
+.modal-content {
+  max-height: 80vh; /* Limiter la hauteur pour permettre le défilement */
+  overflow-y: auto; /* Activer le défilement vertical si nécessaire */
+  border-radius: 10px; /* Coins arrondis pour correspondre au style de la modale */
+}
+
+/* Style pour la barre de défilement */
+.modal-content::-webkit-scrollbar {
+  width: 10px; /* Largeur de la scrollbar */
+  border-radius: 10px; /* Arrondir les bords de la scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f8f5ec; /* Couleur douce pour l'arrière-plan de la scrollbar */
+  border-radius: 10px; /* Arrondir les bords de la piste */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #2C3E50; /* Couleur marron pour correspondre à l'esthétique générale */
+  border-radius: 10px; /* Coins arrondis pour un style cohérent */
+  border: 2px solid #f8f5ec; /* Ajouter un contour pour un effet contrasté */
+}
+
+/* Hover effect on the scrollbar thumb */
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #cf8845; /* Accentuer la couleur au survol */
+}
+
+#modal-close {
+  text-align: end;
+}
+
+#modal-close:hover {
+  cursor: pointer;
+  color: #cf8845;
+}
+
+.swiper-container {
+  margin-left: 25% !important;
+  width: 50% !important;
+  height: auto;
+  position: unset !important;
+}
+
+.swiper-slide {
+  opacity: 0; /* Commence par être invisible */
+  transform: translateX(50px);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-slide-active {
+  opacity: 1; /* Rendre visible l'élément actif */
+  transform: translateX(0); /* Retour à la position initiale */
+}
+
+
+.swiper-slide-active img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Position sous le carrousel */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: #f3a953; /* Couleur des points */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #cf8845; /* Couleur du point actif */
+  opacity: 1;
+}
+
+.modal-content {
+  width: 50% !important;
+  max-height: 75vh;
+  padding: 1rem;
+}
+
+.creation {
+  background-image: url('/img/creation.webp');
+  background-size: cover; /* L'image occupe toute la fenêtre */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-position: center; /* Centre l'image dans la fenêtre */
+  height: 100vh;
+  margin-top: 96px;
+}
+
+#poemCreationForm{
+  background-color: transparent !important;
+}
+
+#poemTitle {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+#poemTitle::placeholder {
+  color: black;
+}
+
+#quatrainsContainer textarea{
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+
+/* === Responsive Design === */
+@media (min-width: 1025px) {
+
+  .sidebar {
+    top:0;
+    left:0;
+    height: 100vh;
+    transform: translateX(-300px);
+    z-index: 1;
+    position: fixed;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .swiper-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .modal-content {
+    width: 40%;
+    max-height: 75vh;
+    padding: 1rem;
+  }
+
+  #burger-btn {
+    display: block;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .sidebar {
+    top:0;
+    left:0;
+    height: 100vh;
+    transform: translateX(-300px);
+    z-index: 1;
+    position: fixed;
+    overflow: auto;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  #poemList {
+    height: 200px;
+  }
+
+  .swiper-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .modal-content {
+    width: 40%;
+    max-height: 75vh;
+    padding: 1rem;
+  }
+
+  #burger-btn {
+    display: block;
+  }
+
+}
+
+/* Pour les smartphones */
+@media (max-width: 540px) {
+
+  .swiper-container {
+    margin-left: 5% !important;
+    width: 90% !important;
+  }
+
+  #wordMapContainer {
+    width: 350px;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .track-info {
+    margin-bottom: -15px;
+  }
+
+  .controls {
+    margin: 0;
+  }
+  
+
+  #daily-quote {
+    font-size: 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+
+  .burger-menu > img{
+    width: 25px;
+    height: 25px;
+  }
+
+
+  header {
+    padding: 0.5rem;
+    height:112px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .poem-container {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .poem-text {
+    bottom: 50px;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+  
+  .modal-content {
+    width: 95% !important;
+    max-height: 70vh;
+    font-size: 0.9rem;
+  }
+
+  .swiper-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #burger-btn {
+    position: inherit;
+  }
+
+
+}

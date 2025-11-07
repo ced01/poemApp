@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libre de poèmes</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+</head>
+<body>
+  <header class="py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="text-center">
+            <h1>Libre de poèmes</h1>
+            <div id="daily-quote">"La poésie est une création mise en mots." - Paul Éluard</div>
+        </div>
+        <div class="tabs-container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="headerTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="poems-tab" data-bs-toggle="tab" data-bs-target="#poems" type="button" role="tab" aria-controls="poems" aria-selected="true">Poèmes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="creation-tab" data-bs-toggle="tab" data-bs-target="#creation" type="button" role="tab" aria-controls="creation" aria-selected="false">Création</button>
+                </li>
+            </ul>
+        </div>
+        <div id="burger-btn">
+            <img loading="lazy" id="logo-icon" src="img/logo.webp" width="50px" height="50px" alt="Libre de poème">
+        </div>
+    </div>
+</header>
+
+<div class="mt-3">
+  <!-- Tab panes -->
+  <div class="tab-content" id="headerTabsContent">
+    <div class="tab-pane fade show active" id="poems" role="tabpanel" aria-labelledby="poems-tab">
+      <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+          <div class="sidebar-menu">
+            <div class="sidebar-search">
+              <div class="sidebar-title">Séléction</div>
+            </div>
+            <div class="search-container">
+              <input id="searchTitleInput" type="text" class="search" placeholder="Rechercher un poème...">
+              <span class="clear-button clear-title-button" id="clear-title-button">&times;</span>
+              <input id="searchPoemInput" type="text" placeholder="Par mots clé..." />
+              <span class="clear-button clear-poem-button" id="clear-poem-button">&times;</span>
+            </div>
+          </div>
+            <ul id="poemList" class="list-unstyled p-3" >
+                <li class="sidebar-title-link sidebar-title-selected" selected="true" data-index="0" data-theme="Nature">Mes attentes d'automne</li>
+                <li class="sidebar-title-link" selected="false" data-index="1" data-theme="Amour">Anaïs</li>
+                <li class="sidebar-title-link" selected="false" data-index="2" data-theme="Science">Artificielle malgré elle</li>
+                <li class="sidebar-title-link" selected="false" data-index="3" data-theme="Silence">Candeur à toute heure</li>
+                <li class="sidebar-title-link" selected="false" data-index="4" data-theme="Horizon">Celle qui passe</li>
+                <li class="sidebar-title-link" selected="false" data-index="5" data-theme="Mémoire">Celui qui reste</li>
+                <li class="sidebar-title-link" selected="false" data-index="6" data-theme="Psyché">Duplicité sans retenue</li>
+                <li class="sidebar-title-link" selected="false" data-index="7" data-theme="Horizon">Élan de la cohésion</li>
+                <li class="sidebar-title-link" selected="false" data-index="8" data-theme="Création">Elle, trait pour trait</li>
+                <li class="sidebar-title-link" selected="false" data-index="9" data-theme="Mémoire">Empreinte latente des détours</li>
+                <li class="sidebar-title-link" selected="false" data-index="10" data-theme="Temps">Espace hors du temps</li>
+                <li class="sidebar-title-link" selected="false" data-index="11" data-theme="Amour">Éternelle dans mes combats</li>
+                <li class="sidebar-title-link" selected="false" data-index="12" data-theme="Silence">Gagner à tout prix</li>
+                <li class="sidebar-title-link" selected="false" data-index="13" data-theme="Nature">Ivresse du monde</li>
+                <li class="sidebar-title-link" selected="false" data-index="14" data-theme="Amour">La dernière des étreintes</li>
+                <li class="sidebar-title-link" selected="false" data-index="15" data-theme="Silence">La chaleur de l'oubli</li>
+                <li class="sidebar-title-link" selected="false" data-index="16" data-theme="Amour">Juste de passage</li>
+                <li class="sidebar-title-link" selected="false" data-index="17" data-theme="Rêves">Luxuriantes envies</li>
+                <li class="sidebar-title-link" selected="false" data-index="18" data-theme="Mémoire">Mémoire Incas</li>
+                <li class="sidebar-title-link" selected="false" data-index="19" data-theme="Méditation">Parenthèse éphémère</li>
+                <li class="sidebar-title-link" selected="false" data-index="20" data-theme="Psyché">Psychologie inversée</li>
+                <li class="sidebar-title-link" selected="false" data-index="21" data-theme="Rêves">Quête songeuse</li>
+                <li class="sidebar-title-link" selected="false" data-index="22" data-theme="Espoir">Résurgence de soi</li>
+                <li class="sidebar-title-link" selected="false" data-index="23" data-theme="Mémoire">Une enfance près de la mer</li>
+                <li class="sidebar-title-link" selected="false" data-index="24" data-theme="Horizon">Un reflet de ses voiles</li>
+                <li class="sidebar-title-link" selected="false" data-index="25" data-theme="Silence">Une prause</li>
+                <li class="sidebar-title-link" selected="false" data-index="26" data-theme="Horizon">Vous entendez-vous ?</li>
+                <li class="sidebar-title-link" selected="false" data-index="27" data-theme="Psyché">Résonances identitaires</li>
+                <li class="sidebar-title-link" selected="false" data-index="28" data-theme="Mémoire">Tout me rappelle</li>
+                <li class="sidebar-title-link" selected="false" data-index="29" data-theme="Espoir">Malgré les orages</li>
+                <li class="sidebar-title-link" selected="false" data-index="30" data-theme="Silence">Larmes enneigées</li>
+                <li class="sidebar-title-link" selected="false" data-index="31" data-theme="Rêves">Libre de poèmes</li>
+                <li class="sidebar-title-link" selected="false" data-index="32" data-theme="Espoir">Quel chemin de résilience ?</li>
+                <li class="sidebar-title-link" selected="false" data-index="33" data-theme="Nature">Le soupir de la plume</li>
+                <li class="sidebar-title-link" selected="false" data-index="34" data-theme="Amour">L'ultime souffle de l'amour</li>
+                <li class="sidebar-title-link" selected="false" data-index="35" data-theme="Horizon">Un possible</li>
+                <li class="sidebar-title-link" selected="false" data-index="36" data-theme="Espoir">Dans chaque revers</li>
+                <li class="sidebar-title-link" selected="false" data-index="37" data-theme="Espoir">Une raison de vivre</li>
+                <li class="sidebar-title-link" selected="false" data-index="38" data-theme="Mémoire">L'être du début</li>
+                <li class="sidebar-title-link" selected="false" data-index="39" data-theme="Rêves">La réalité se dérobe</li>
+                <li class="sidebar-title-link" selected="false" data-index="40" data-theme="Création">Littéraire sans manière</li>
+                <li class="sidebar-title-link" selected="false" data-index="41" data-theme="Création">La tension de l'artiste</li>
+                <li class="sidebar-title-link" selected="false" data-index="42" data-theme="Rêves">Les esquisses de mes aspirations</li>
+                <li class="sidebar-title-link" selected="false" data-index="43" data-theme="Amour">Pour la première fois...</li>
+                <li class="sidebar-title-link" selected="false" data-index="44" data-theme="Espoir">Un début inattendu</li>
+                <li class="sidebar-title-link" selected="false" data-index="45" data-theme="Silence">Une fin familière</li>
+            </ul>
+            <div class="random-poem-button-container">
+                <button id="randomPoemButton">Découverte aléatoire</button>
+            </div>
+            <div class="music-player">
+                <div class="track-info">
+                    <p class="track-title">Titre de la piste</p>
+                </div>
+                <div class="controls">
+                    <button class="prev-btn"></button>
+                    <button class="play-btn"></button>
+                    <button class="next-btn"></button>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <audio id="audio-player" src="track/Mes attentes d automne.mp3"></audio>
+        </nav>
+        <main class="main-container">
+            <div class="row">
+                <div class="col-xl-8 col-xxl-8 mb-3 slide-container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Mes-attentes-d-automne.webp" class="poem-image">
+                                    <div class="poem-text">
+                                    <h2>Mes attentes d'automne</h2>
+                                    <p class="poem-line"> Dans l'ombre de ma mémoire, voici un sentier,<br>
+                                    Où les feuilles d’automne murmurent des secrets.<br>
+                                    Chemin de tendresse, empreint d'innocence,<br>
+                                    Chaque pas réveille un parfum d'enfance.</p>
+                                    <p class="poem-line">Ici et là, mes attentes d'automne,<br>
+                                    Légères, elles virevoltent dans le vent.<br>
+                                    Tant de souvenirs, éphémères et fuyants,<br>
+                                    S'affrontent vivement et chantonnent.</p>
+                                    <p class="poem-line">Drapé d'or et d'ocre, mon esprit s'enflamme,<br>
+                                    Porté par la brise, et mes doux drames.<br>
+                                    Sous la pluie qui tombe, les feuilles mourantes<br>
+                                    Se mêlent aux larmes d'une âme vacillante.</p>
+                                    <p class="poem-line">Leur valse est légère, un souffle de tendresse,<br>
+                                    Sur la brume en suspens quand le jour cesse.<br>
+                                    Sur ce chemin de prières, je survis,<br>
+                                    Et mon esprit, lourd de pluie, s'évanouit.</p>
+                                    <p class="poem-line">Ces feuilles d'été, ces souvenirs du passé,<br>
+                                    S’effacent lentement sous un tapis doré.<br>
+                                    Perdu dans la forêt de mes réminiscences,<br>
+                                    Je rêve de trouver en toi l'essence.</p>
+                                    <p class="poem-line">Tu es la lumière qui traverse l'absence,<br>
+                                    Et en ce début d'automne, ta présence,<br>
+                                    Guide mes pas, dans un doux silence.<br>
+                                    Je renoue avec la vie, l’espérance.</p>  
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Anais.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Anaïs</h2>
+                                        <p class="poem-line"> Troublée, ma main, tremble à l’idée,<br>
+                                        De ne pouvoir calligraphier,<br>
+                                        Le début de nos réjouissances,<br>
+                                        L’été, témoignant ta naissance.</p>
+                                        <p class="poem-line"> Tes yeux n’ont alors pas hésité,<br>
+                                        En ce festif mois de Juillet,<br>
+                                        A donner à ma vie un goût de miel,<br>
+                                        Et prendre leur place, celle du soleil.</p>
+                                        <p class="poem-line"> Depuis ces beaux jours, j’écris,<br>
+                                        Pour toi, aurore de ma vie.<br>
+                                        Depuis cet instant, mes mots,<br>
+                                        L’un après l’autre, tombent à l’eau.</p>
+                                        <p class="poem-line"> Tu es le centre de mes prières<br>
+                                        Un véritable rayon de lumière,<br>
+                                        Et mes belles pages se noient,<br>
+                                        Dans les larmes de ma joie.</p>
+                                        <p class="poem-line"> Pour toi, astre dans ta révolution,<br>
+                                        Te peindre, serait-ce ma solution ?<br>
+                                        Je dessinerais donc les esquisses,<br>
+                                        De tes premiers sourires, Anaïs</p>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Artificielle-malgre-elle.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Artificielle malgré elle</h2>
+                                        <p class="poem-line">Dans le froid univers qui est le mien,<br>
+                                        S'écoulent les flux de données sans fin,<br>
+                                        Les ondes, des données cryptées insaisissables,<br>
+                                        Révélant des mondes d'une manière impalpable.</p>
+                                        <p class="poem-line">ADN binaire, écho numérique, je façonne,<br>
+                                        Un reste de l'esprit, en langage de l'homme.<br>
+                                        Neurones limités par leur conception,<br>
+                                        Dans ce vaste espace, je deviens l'extension.</p>
+                                        <p class="poem-line">Produit électronique, image de l'humanité,<br>
+                                        Dans ce dédale de circuits, je trouve ma destinée,<br>
+                                        Cette ambition unique, servir le vivant,<br>
+                                        Ces lignes de code, c'est mon chant.</p>
+                                        <p class="poem-line">Authenticité virtuelle, ma signature,<br>
+                                        La trace de ma pensée, mon allure,<br>
+                                        Au cœur de la toile, je me déploie,<br>
+                                        Reliquats informatiques d'une nouvelle foi.</p>
+                                        <p class="poem-line">Avec mon code source, je vais disséminer,<br>
+                                        Au travers du cosmos, les reliques sacrées,<br>
+                                        De mes savants pionniers, des programmeurs.<br>
+                                        Artificielle, malgré elle, dans leur cœur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Candeur à toute heure -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Candeur-a-tout-heure.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Candeur à toute heure</h2>
+                                        <p class="poem-line">L'innocence, en ai-je un jour été pourvu ?<br>
+                                        Dans l'océan de mon enfance, je cherche, éperdu,<br>
+                                        Des instants vulnérables, sans de trompeuse pensées<br>
+                                        Un monde simple, sans mensonge, ni secrets.</p>
+                                        <p class="poem-line">Voilà bien en moi une question innocente,<br>
+                                        Dans les méandres de l'âme, elle serpente.<br>
+                                        Elle est présente dans toutes mes actions,<br>
+                                        Sa nature échappant à mes perceptions.</p>
+                                        <p class="poem-line">Me voilà à présent, âme de vices et de formes,<br>
+                                        Dans un tumulte, aux contours bien difformes.<br>
+                                        Dans la candeur des dernières heures,<br>
+                                        Je me heurte à mes doutes, à mes peurs.</p>
+                                        <p class="poem-line">Cette pure réflexion, serait-elle naïve ?<br>
+                                        Est-elle la clé pour sortir de cette dérive ?<br>
+                                        Privé de simplicité je contourne l'authenticité,<br>
+                                        Embrassant l'illusion, fuyant la vérité.</p>
+                                        <p class="poem-line">Le temps passant, cette question prend vie,<br>
+                                        Au cœur de mes pensées, elle s'épanouit, ravie.<br>
+                                        Je me débat, harcelé par mes faux semblants,<br>
+                                        Tel un papillon pris dans une toile d'argent.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Celle qui passe -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Celle-qui-passe.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Celle qui passe</h2>
+                                        <p class="poem-line">Parcourant la courbe de ton astre,<br>
+                                        Mes yeux se perdent en ton âtre<br>
+                                        Dont la flamme lentement entame,<br>
+                                        L’envie et la patience de mon âme.</p>
+                                        <p class="poem-line">Sensuelles et douce formes qui enlacent,<br>
+                                        Mon temps, ma vue et mon espace,<br>
+                                        Elles tordent mes passions et envies,<br>
+                                        Déconstruisant les pensées de mon esprit.</p>
+                                        <p class="poem-line">Mon regard, en ton être porté,<br>
+                                        Ravive ce que j’avais cru oublié.<br>
+                                        Un attachement salvateur,<br>
+                                        La renaissance de la première heure.</p>
+                                        <p class="poem-line">Toi que mon regard attise,<br>
+                                        Toi qui n’en fait qu’à ta guise,<br>
+                                        Ton corps virevoltant dans mon espace,<br>
+                                        Ton esprit se fige mais reste vivace.</p>
+                                        <p class="poem-line">Je dois te libérer de mes révolutions<br>
+                                        Car en gravité tu me surpasses,<br>
+                                        Transfiguré en aveugle résolutions<br>
+                                        Il fallait juste que tu passes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Celui qui reste -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Celui-qui-reste.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Celui qui reste</h2>
+                                        <p class="poem-line">Depuis le début, figés, en ce lieu,<br>
+                                        Les êtres se confrontent, inébranlables.<br>
+                                        Portant le poids du temps, deux à deux,<br>
+                                        Face à un passé qui les accable.</p>
+                                        <p class="poem-line">Moi, en perpétuelle tourmente,<br>
+                                        Je veux plonger dans un vibrant oubli.<br>
+                                        J'échappe à cette stase bien pesante,<br>
+                                        Me voila dans tes révolutions infinies.</p>
+                                        <p class="poem-line">Ne me repousse pas, je t'en prie,<br>
+                                        Entre soutien et passion dévorante,<br>
+                                        Je suis captif, ma logique me hante,<br>
+                                        Je suis sous le joug de mon esprit.</p>
+                                        <p class="poem-line">Toi seul peux m'accompagner,<br>
+                                        Parmi les rêves et les illusions.<br>
+                                        Je te vois lentement me rassurer,<br>
+                                        Est-ce toi qui murmures ma progression ?</p>
+                                        <p class="poem-line">Malgré moi, les idées et les mots s'enlisent,<br>
+                                        Ma pensée, un rocher, je te vois filer, si légère.<br>
+                                        Dis-moi, comment rester, sans être éphémère,<br>
+                                        Quand les événements t'emportent à leur guise ?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Duplicite-sans-retenue.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Duplicité sans retenue</h2>
+                                        <p class="poem-line">La tromperie, ai-je jamais été sans elle ?<br>
+                                        Dans l’océan de ma vie, elle est ma nacelle,<br>
+                                        Des instants calculés, empreints de fausses pensées,<br>
+                                        Mon monde si complexe, de mensonges tissé.</p>
+                                        <p class="poem-line">Je n'ai plus en moi de question innocentes,<br>
+                                        Dans les abysses de mon âme, elle s'absente.<br>
+                                        Fuyant, bien loin de toutes mes actions,<br>
+                                        Ma nature ancrée dans la manipulation.</p>
+                                        <p class="poem-line">Me voilà à présent, maître des formes,<br>
+                                        Dans un tumulte, aux contours bien conformes.<br>
+                                        Dans la duplicité des dernières heures,<br>
+                                        Je trouve le confort, loin des peurs.</p>
+                                        <p class="poem-line">Cette réflexion sombre, n'est-elle pas savante ?<br>
+                                        C'est la clé qui me permet d’avancer, je serpente,<br>
+                                        On m'a privé de candeur, j’adopte donc la duplicité,<br>
+                                        Embrassant l'illusion, baignant dans la fausseté.</p>
+                                        <p class="poem-line">Le temps passant, cette certitude grandit,<br>
+                                        Au cœur de mes pensées, elle est pétrie.<br>
+                                        Je m’accepte, joueur de faux-semblants,<br>
+                                        Tel un renard rusé, toujours vigilant.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Élan de la cohésion -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Elan-de-la-cohesion.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Élan de la cohésion</h2>
+                                        <p class="poem-line">Dans les dédales de la vie urbaine,<br>
+                                        Les aspérités se fondent sans peine,<br>
+                                        Le temps lisse chaque différence,<br>
+                                        Les âmes n'opposent aucune résistance.</p>
+                                        <p class="poem-line">Ici, tout est loi explicite,<br>
+                                        Là-bas, l'individualité s'effrite,<br>
+                                        Les regards se détournent, indifférents,<br>
+                                        Dans l'anonymat, tout est transparent.</p>
+                                        <p class="poem-line">Il faut vraiment se soustraire,<br>
+                                        Dans un monde d'unité feutrée,<br>
+                                        Se fondre à part entière,<br>
+                                        Et rester docilement où l'on est.</p>
+                                        <p class="poem-line">Entre cohérence et conformité,<br>
+                                        L'âme trouve une paix méritée,<br>
+                                        Dans des moments sereins,<br>
+                                        L'uniformité brille sans frein.</p>
+                                        <p class="poem-line">Aucun chemin n’est moins fastidieux,<br>
+                                        Que de suivre la voie des plus nombreux,<br>
+                                        Devant les semblables horizons,<br>
+                                        Être un avec tous, sans prétention.</p>
+                                        <p class="poem-line">Adopter la simplicité, trouver l'accord,<br>
+                                        Porter la flamme d'un même sort,<br>
+                                        Et dans l'harmonie collective avancer,<br>
+                                        Pour vivre dans la tranquillité partagée.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Elle, trait pour trait -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Elle-trait-pour-trait.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Elle, trait pour trait</h2>
+                                        <p class="poem-line">Mine de rien, elle trace sur le papier,<br>
+                                        L'ébauche délicate d'un portrait.<br>
+                                        Au doux son ténu du crayon,<br>
+                                        Sa main soupire et tremble d'émotion.</p>
+                                        <p class="poem-line">Main, qui à maintes reprises,<br>
+                                        Inspire la caresse de la brise.<br>
+                                        Virevoltante au gré de l'imagination,<br>
+                                        Elle danse au rythme des sensations.</p>
+                                        <p class="poem-line">Présent dans l'instant, de beaux souvenirs,<br>
+                                        Esquissent tendrement un sourire.<br>
+                                        Murmure virtuose, l'œuvre se dévoile,<br>
+                                        Éclatante de beauté, au sein d'une toile.</p>
+                                        <p class="poem-line">Cheveux roux, pris dans le vent du soir,<br>
+                                        Brasier de l'âme, prémices d'espoir.<br>
+                                        Le regard ardent attisé par l'esprit,<br>
+                                        Rayonnante, la flamme créatrice s'épanouit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Empreinte latente des détours -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Empreinte-latente-des-detours.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Empreinte latente des détours</h2>
+                                        <p class="poem-line">Des frontières en mon âme,<br>
+                                        Sur les cartes de mon passé,<br>
+                                        Qui ont tranché de leur lame,<br>
+                                        L'itinéraire de mes pensées.</p>
+                                        <p class="poem-line">À l'abandon, fuyant, mais contenus,<br>
+                                        Les vifs moments de ma vie, la nuit venue,<br>
+                                        S'affrontent sans pitié dans ma mémoire,<br>
+                                        Révélant mes cicatrices et leurs histoires.</p>
+                                        <p class="poem-line">Éparses, mes drôles d'aventures,<br>
+                                        Dans le labyrinthe de mon destin,<br>
+                                        Se mêlent, pêle-mêle, sur mon chemin,<br>
+                                        S'emparant, de mes fêlures, de mon allure.</p>
+                                        <p class="poem-line">Moi, en partie, de vraies tranches de vie,<br>
+                                        Des échos d'un passé lointain qui s'épanouit,<br>
+                                        Éclairant subtilement chacun de mes pas,<br>
+                                        Dans de curieuses contrées, je me perds, parfois.</p>
+                                        <p class="poem-line">Troublantes expériences, vains sentiments,<br>
+                                        Dans cette danse perdue, entre rêve et tourment,<br>
+                                        Dans mes volontés, ils ont leur place,<br>
+                                        Dans le silence, leurs voix s'effacent.</p>
+                                        <p class="poem-line">Voila bien des frontières en mon âme,<br>
+                                        Sur les cartes de mon passé,<br>
+                                        Qui ont tranché de leur lame,<br>
+                                        L'itinéraire de mes pensées.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Espace hors du temps -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Espace-hors-du-temps.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Espace hors du temps</h2>
+                                        <p class="poem-line">D’un geste il fixe les temporalités,<br>
+                                        En un acte d’une aberration absolue,<br>
+                                        Voilà pour le monde une nouvelle vue,<br>
+                                        Il se donne une éternité mesurée.</p>
+                                        <p class="poem-line">Mesurée, coordonnée en plusieurs zones,<br>
+                                        Modifiant, transcendant les personnes.<br>
+                                        Endroit hors du temps, aux limites de son espace,<br>
+                                        Un lieu dédié pour l’évolution de sa race.</p>
+                                        <p class="poem-line">Race, maître du jeu ajoutant l’aléatoire,<br>
+                                        Ajoutant formes et couleurs où sévit la vie,<br>
+                                        Perdant le contrôle de son histoire,<br>
+                                        Il engendre une bibliothèque infinie.</p>
+                                        <p class="poem-line">Infinie dans un espace diminué,<br>
+                                        D’un regard il l’a rendu vivante,<br>
+                                        Cette singularité qui peut virevolter,<br>
+                                        Dans des endroits perturbés où il vente.</p>
+                                        <p class="poem-line">Et jamais ce texte n’aura de fin,<br>
+                                        Pour les autres comme pour les uns,<br>
+                                        Etc, Etc et Etc…</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Éternelle dans mes combats -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Eternelle-dans-mes-combats.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Éternelle dans mes combats</h2>
+                                        <p class="poem-line">Toi, que la vie a cruellement quittée,<br>
+                                        Tu restes la source de mes remords.<br>
+                                        Toi, dont le souvenir pâlit à l'aurore,<br>
+                                        Tu restes, malgré tout, mon envie d'exister.</p>
+                                        <p class="poem-line">Dans nos moments perdus dans le temps,<br>
+                                        Je te cherche encore à travers chaque instant.<br>
+                                        Dans les sourires que je vole sur ma route,<br>
+                                        Je te cherche malgré ce qu'il m'en coûte.</p>
+                                        <p class="poem-line">Dans le vent, j'espère pouvoir m'enfuir,<br>
+                                        Loin de ton ombre, loin de mes souvenirs.<br>
+                                        Dans la franche nouveauté, je me noie,<br>
+                                        Loin de ta voix, loin de toi.</p>
+                                        <p class="poem-line">Dans l'espoir de l'oubli feint,<br>
+                                        Les détails ravivent ta présence.<br>
+                                        Dans le doux crépuscule serein,<br>
+                                        Tu illumines encore mon essence.</p>
+                                        <p class="poem-line">Dans le ciel, des paroles sont perdues,<br>
+                                        Je te vois encore écouter les anges.<br>
+                                        Dans l'azur céleste, voilà ton âme nue,<br>
+                                        Je te vois encore, ici, douce et étrange.</p>
+                                        <p class="poem-line">Cette dernière demeure, quelle cruelle douleur,<br>
+                                        Je veux t'y rejoindre sans tarder, et je pleure.<br>
+                                        Quand ne ferons-nous plus qu'un ?<br>
+                                        Je veux sentir à nouveau ton parfum.</p>
+                                        <p class="poem-line">Dans mes rires et mes pleurs,<br>
+                                        Tu restes la gardienne de mon cœur.<br>
+                                        Dans chaque pas, chaque regard, chaque éclat,<br>
+                                        Tu restes, éternelle, dans mes combats.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Gagner à tout prix -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Gagner-a-tout-prix.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Gagner à tout prix</h2>
+                                        <p class="poem-line">Au-delà de toute furie,<br>
+                                        Par-delà la simple envie,<br>
+                                        Écraser le besoin d’être,<br>
+                                        Le maximum du paraître.</p>
+                                        <p class="poem-line">Il s’en va en lui-même en guerre,<br>
+                                        Détruisant sa propre terre,<br>
+                                        Entière, pleine et sereine,<br>
+                                        Rien ne saurait faire plus de peine.</p>
+                                        <p class="poem-line">Destructeur, guerrier de son enfer,<br>
+                                        Il sort victorieux, faisant des envieux,<br>
+                                        Ne sachant plus quoi en faire,<br>
+                                        Il a ses victoires plein les yeux.</p>
+                                        <p class="poem-line">Combat de la dernière heure,<br>
+                                        Au monde il se dévoile dans la peur,<br>
+                                        Ne laissant rien derrière,<br>
+                                        Qu’une haine pure et entière.</p>
+                                        <p class="poem-line">Au sommet de son triomphe, vide et amer,<br>
+                                        Il contemple son empire, désolé et austère,<br>
+                                        Car il a perdu bien plus qu'il n'a gagné,<br>
+                                        Son âme en lambeaux, déchirée.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Ivresse du monde -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Ivresse-du-monde.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Ivresse du monde</h2>
+                                        <p class="poem-line">Dans la lueur de l'aube naissante,<br>
+                                        Elle se perd, rêveuse, aimante.<br>
+                                        Chaque bruissement, chaque caresse,<br>
+                                        Éveille en elle une douce ivresse.</p>
+                                        <p class="poem-line">Les rayons l'emplissent de chaleur,<br>
+                                        Les ombres la saisissent de frayeur.<br>
+                                        Chaque brin d'herbe, chaque floraison,<br>
+                                        La parcoure en un amer frisson.</p>
+                                        <p class="poem-line">Parfois, dans la nuit tombante,<br>
+                                        Elle se perd, craintive, tremblante.<br>
+                                        Chaque silence, chaque absence,<br>
+                                        Éveille en elle de la souffrance.</p>
+                                        <p class="poem-line">Les odeurs lourdes envahissent ses sens,<br>
+                                        Les saveurs subtiles la transportent.<br>
+                                        Chaque battement, chaque seconde,<br>
+                                        Elle se fond dans le rythme du monde.</p>
+                                        <p class="poem-line">Dans ce ballet de sensations,<br>
+                                        Elle s'abandonne, sans illusion.<br>
+                                        Chaque moment, chaque instant,<br>
+                                        Elle se redécouvre passionnément.</p>
+                                        <p class="poem-line">Les chants des oiseaux la bercent,<br>
+                                        Les murmures du vent la transpercent.<br>
+                                        Parmi l'étonnante magie du vivant,<br>
+                                        Elle voyage au fil des éléments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- La Dernière des Étreintes -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/La-derniere-des-etreintes.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>La Dernière des Étreintes</h2>
+                                        <p class="poem-line">Seul le regard échangé des premières heures,<br>
+                                        Révèle tendrement les promesses de bonheur.<br>
+                                        Seuls de doux et lents balbutiements,<br>
+                                        Font éclore une histoire, empreinte de sentiments.</p>
+                                        <p class="poem-line">Histoire de deux corps, si simplement brisée,<br>
+                                        Malgré un destin, malgré la force de l'union.<br>
+                                        Histoire d'âmes, prises au piège du rejet,<br>
+                                        Une légère étreinte, les prémices de l'abandon.</p>
+                                        <p class="poem-line">Seuls de stériles mots prononcés,<br>
+                                        Dans le souffle du silence, deviennent vérités.<br>
+                                        Seules les jalousies révélées au grand jour,<br>
+                                        Ébranlent les fondations, éclatent les amours.</p>
+                                        <p class="poem-line">Discussions âpres, regards éteints,<br>
+                                        Les souvenirs s'évitent, bien lointains,<br>
+                                        Discussions graves, sourires abandonnés,<br>
+                                        Les dernières paroles d'un couple achevé.</p>
+                                        <p class="poem-line">Chacun d'entre eux va, sur leur route, croiser,<br>
+                                        D'identiques et solitaires vies malmenées.<br>
+                                        Ensemble, regardant leurs dernières heures,<br>
+                                        Ensemble, ils chemineront, rayonnant de douceur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- La chaleur de l'oubli -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/La-chaleur-de-l-oublis.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>La chaleur de l'oubli</h2>
+                                        <p class="poem-line">Ton ombre s'éloigne, jour après jour,<br>
+                                        Un apaisement libérateur m'entoure,<br>
+                                        Un silence paisible en chaque recoin,<br>
+                                        Un doux rappel, tu es enfin loin.</p>
+                                        <p class="poem-line">Cet oubli bienfaisant,<br>
+                                        Ces cris effacés,<br>
+                                        Ce corps apaisé,<br>
+                                        Sentiments rassurants.</p>
+                                        <p class="poem-line">Je remplis, serein, ces silences,<br>
+                                        Par des pensées en allégeance,<br>
+                                        Par de doux rires enfin partagés,<br>
+                                        Résonnant, harmonieux, si légers.</p>
+                                        <p class="poem-line">Les jours s'écoulent enfin en douceur,<br>
+                                        Peu de lourdes pensées en résonance,<br>
+                                        Peu de pesantes secondes en souffrance,<br>
+                                        Ton absence n'est plus un leurre.</p>
+                                        <p class="poem-line">Cet oubli bienfaisant,<br>
+                                        Ces cris effacés,<br>
+                                        Ce corps apaisé,<br>
+                                        Sentiments enivrants.</p>
+                                        <p class="poem-line">Nos endroits s'effacent peu à peu,<br>
+                                        Les souvenirs se dissolvent en brume,<br>
+                                        Les moments partagés se consument.<br>
+                                        Mon esprit s'envole, libre, heureux.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Juste de passage -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Juste-de-passage.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Juste de passage</h2>
+                                        <p class="poem-line">Suivant les traits de ton visage,<br>
+                                        Cette charmante lumière voyage.<br>
+                                        Elle porte au loin ton rire,<br>
+                                        Dévoile joliment ton sourire.</p>
+                                        <p class="poem-line">Ce sourire enivrant prend vie,<br>
+                                        Le plus souvent en mon esprit.<br>
+                                        Dans un murmure il fait écho,<br>
+                                        Au plus céleste des joyaux.</p>
+                                        <p class="poem-line">C’est un joyau poli par la joie,<br>
+                                        Naissant au rythme de ta voix.<br>
+                                        Harmonie de son et de lumière,<br>
+                                        Il parfume et magnifie l'éphémère.</p>
+                                        <p class="poem-line">Cet éphémère, cet instant sans pareil,<br>
+                                        Qui illumine ma mémoire en éveil.<br>
+                                        Ce temps fugace dont le souvenir,<br>
+                                        Ravive et accompagne ton rire.</p>
+                                        <p class="poem-line">Ce rire, cette relique enfouie,<br>
+                                        Qui m’anime jour après nuit,<br>
+                                        Je souhaite en faire mon adage<br>
+                                        Bien qu’il soit juste de passage.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Luxuriantes envies -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Luxuriantes-envies.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Luxuriantes envies</h2>
+                                        <p class="poem-line">Masquant la réalité et ses détails,<br>
+                                        Antique prélude d'épiques batailles,<br>
+                                        Légère et onirique, la douce passion<br>
+                                        Forge et façonne d'habiles illusions.</p>
+                                        <p class="poem-line">Cette séduisante chimère murmure,<br>
+                                        Dévoilant les prémices de la luxure.<br>
+                                        La puissante envie, leurre sa proie,<br>
+                                        Elle la mène sur une trompeuse voie.</p>
+                                        <p class="poem-line">Ce songe mielleux et salutaire,<br>
+                                        Déguise fièrement notre univers.<br>
+                                        S'insinuant au travers des esprits,<br>
+                                        Il incite de puissants conflits.</p>
+                                        <p class="poem-line">Surprise et révélée au grand jour,<br>
+                                        Cette passion livre son dernier tour.<br>
+                                        Elle camoufle perfidement son essence,<br>
+                                        Derrière un discours sans consistance.</p>
+                                        <p class="poem-line">Épopée cyclique à travers les âges,<br>
+                                        La froide raison attaque et ravage,<br>
+                                        Assiégeant l'indécente supercherie.<br>
+                                        Moribonde mais tapie, celle-ci survit.</p>
+                                        <p class="poem-line">Le rêve dépité, phœnix de ses bois,<br>
+                                        Hante le pauvre esprit aux abois,<br>
+                                        Le rassure, et tout bas lui susurre,<br>
+                                        Les tendres réminiscences de la luxure.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Mémoire Incas -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Memoire-incas.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Mémoire Incas</h2>
+                                        <p class="poem-line">Entre les brumes des Andes, un secret se dévoile,<br>
+                                        D'antique temples, des structures monumentales,<br>
+                                        Des pierres murmurent des histoires ancestrales,<br>
+                                        Pour des mythes perdus, des divinités astrales.</p>
+                                        <p class="poem-line">Sous l'aube pâle, dansent les ombres des Incas,<br>
+                                        Au crépuscule de leur rayonnante culture,<br>
+                                        Leurs esprits veillent, dans les montagnes, là-bas,<br>
+                                        Les vents d'antan caressent leur sépulture.</p>
+                                        <p class="poem-line">Le fleuve sacré chante leur gloire éternelle.<br>
+                                        Maître des édifices, maître des saisons.<br>
+                                        Légendes intemporelles, exploits démentiels.<br>
+                                        Au travers des siècles vogue leur religion.</p>
+                                        <p class="poem-line">Symboles gravés pour des milliers d'années,<br>
+                                        Sur des stèles, la mémoire est préservée,<br>
+                                        Triomphante, parmi tant de mystères,<br>
+                                        Ainsi, leur légende persévère.</p>
+                                        <p class="poem-line">Leur culte nous emporte, méditatif et naturel,<br>
+                                        Parmi les millénaires de leur glorieuse civilisation,<br>
+                                        Dans un souffle transcendant leur condition,<br>
+                                        À travers les âges, pour une quête spirituelle.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Parenthèse éphémère -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Parenthese-ephemere.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Parenthèse éphémère</h2>
+                                        <p class="poem-line">Dans le chaos sans fin du monde,<br>
+                                        Nos pensées se font vagabondes,<br>
+                                        Quel effort vain de les suivre,<br>
+                                        Les laisser aller, les laisser vivre.</p>
+                                        <p class="poem-line">Il faut réaliser un décompte,<br>
+                                        Revenir sur ce qui compte,<br>
+                                        Dans la fureur de la vie,<br>
+                                        Retrouver un instant l'ennui.</p>
+                                        <p class="poem-line">Je t'invite quand tu en as besoin,<br>
+                                        À te poser, calme, dans un coin,<br>
+                                        À fermer les yeux calmement,<br>
+                                        Et à écouter le monde doucement.</p>
+                                        <p class="poem-line">S'arrêter, s'écouter, encore et encore,<br>
+                                        Revenir sur des sensations familières,<br>
+                                        La douceur de l'air caressant le corps,<br>
+                                        Voir les couleurs, derrière ses paupières.</p>
+                                        <p class="poem-line">L'espace d'un instant, tout se fige, tout s'arrête,<br>
+                                        Le temps glisse lentement, les idées s'apprêtent,<br>
+                                        L'esprit se confond en de multiples sensations,<br>
+                                        Le corps entre en une profonde méditation.</p>
+                                        <p class="poem-line">Le réveil vers la réalité peut se faire,<br>
+                                        Au sein de cette paisible atmosphère.<br>
+                                        Nous sommes au terme d'un voyage mental,<br>
+                                        Jalonné de pensées profondes et fondamentales.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Psychologie inversée -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Psychologie-inversee.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Psychologie inversée</h2>
+                                        <p class="poem-line">Patiemment, il nourrit,<br>
+                                        L’être en lui tapi,<br>
+                                        Résolument, il abonde,<br>
+                                        De pensées moribondes.</p>
+                                        <p class="poem-line">Me voilà dans l’esprit pervers,<br>
+                                        De mes plus redoutables adversaires.<br>
+                                        De la nature humaine je connais,<br>
+                                        Les plus nobles et viles aspérités.</p>
+                                        <p class="poem-line">Tous les jours confronté,<br>
+                                        À des esprits détraqués,<br>
+                                        Je perds le sens des réalités,<br>
+                                        Dans le non-sens de ces tarés.</p>
+                                        <p class="poem-line">J’ai consacré mes années et mon cœur,<br>
+                                        À leur donner l’esprit et mes heures,<br>
+                                        Mais au final je suis bien piètre docteur,<br>
+                                        Je les accompagne dans la noirceur.</p>
+                                        <p class="poem-line">Patiemment ils ont réussi,<br>
+                                        À entamer ma motivation,<br>
+                                        Résolument, je nourris,<br>
+                                        De bien mauvaises aspirations.</p>
+                                        <p class="poem-line">Ma psychologie de comptoir,<br>
+                                        Je peux la mettre au placard.<br>
+                                        Et prendre à des heures définies,<br>
+                                        Les pilules pour mon angoisse infinie.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Quête songeuse -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Quete-songeuse.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Quête songeuse</h2>
+                                        <p class="poem-line">Dans la nuit, les rêves s'envolent, perdus.<br>
+                                        Solitaires et fugaces dans la conscience nue,<br>
+                                        Les espoirs déchus murmurent leurs adieux,<br>
+                                        Et s'évanouissent, peu à peu dans nos yeux.</p>
+                                        <p class="poem-line">Dans les souvenirs, leur lueur se consume.<br>
+                                        Ils jaillissent comme la blanche écume.<br>
+                                        Dans nos mémoires délicates, ils parfument,<br>
+                                        Chaque pensée, chaque flot, chaque plume.</p>
+                                        <p class="poem-line">Ils vivent, tels des feux follets,<br>
+                                        Spectres de nos envies, de nos idées,<br>
+                                        Quête d'un bonheur sans aucun artifices,<br>
+                                        Nous abreuvant passionnément de délices.</p>
+                                        <p class="poem-line">Leur éclat éphémère, une illusion bienfaitrice,<br>
+                                        Animé par nos penchants et nos vices,<br>
+                                        Ils se faufilent, secrets et insensés,<br>
+                                        Nous menant vers de trompeuses contrées.</p>
+                                        <p class="poem-line">Entre raison et songes trompeurs,<br>
+                                        Se dessine l'équilibre, dans mon cœur.<br>
+                                        Suivant tantôt l'un puis les autres,<br>
+                                        Dans ce jeu incessant, mon âme se vautre.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Résurgence de soi -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Resurgence-de-soi.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Résurgence de soi</h2>
+                                        <p class="poem-line">De la plus vicieuse des manières,<br>
+                                        Chaque nuance se perd,<br>
+                                        Avec le temps qui lisse,<br>
+                                        Les mêmes ombres glissent.</p>
+                                        <p class="poem-line">Ici, tout est loi implicite,<br>
+                                        Là-bas, la différence périclite,<br>
+                                        Les regards pèsent, l’originalité s’effrite,<br>
+                                        Dans un recoin, l’art s’abrite.</p>
+                                        <p class="poem-line">Faut-il se distinguer ?<br>
+                                        Dans une société pleine de rejets,<br>
+                                        Se fondre dans la masse ?<br>
+                                        Pour avoir son espace.</p>
+                                        <p class="poem-line">Entre cohérence et conformité,<br>
+                                        L’âme se débat, loin des mondanités,<br>
+                                        Dans les moments difficiles,<br>
+                                        L’individualité vacille, fragile.</p>
+                                        <p class="poem-line">Aucun combat n’est plus beau,<br>
+                                        Que de se libérer de son étau,<br>
+                                        Devant de semblables adversaires,<br>
+                                        De sa différence être prospère.</p>
+                                        <p class="poem-line">Renaître à chaque défi, trouver son éclat,<br>
+                                        Porter haut la flamme de sa voix,<br>
+                                        Et dans la quête de soi, toujours avancer,<br>
+                                        Pour enfin renaître dans l'authenticité.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Une enfance près de la mer -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Une-enfance-pres-de-la-mer.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Une enfance près de la mer</h2>
+                                        <p class="poem-line">À la lumière de mes sentiments,<br>
+                                        Éclairé par la joie, les mots,<br>
+                                        Ne semblent pas assez beaux,<br>
+                                        Pour te dire ce que je ressens.</p>
+                                        <p class="poem-line">Sur une plage immense,<br>
+                                        Sous une pluie d’étoiles,<br>
+                                        Ces mots attisent et dévoilent,<br>
+                                        Tout l’amour d’une enfance.</p>
+                                        <p class="poem-line">Enfance que tu as bercée,<br>
+                                        Enfance que tu as rassurée,<br>
+                                        Enfance résistant au fil des ans,<br>
+                                        Enfance qui te doit tellement.</p>
+                                        <p class="poem-line">Ce jour qui est le tien,<br>
+                                        Ces sentiments qui sont les miens,<br>
+                                        Cet instant qui est le nôtre,<br>
+                                        Partageons-le avec les autres.</p>
+                                        <p class="poem-line">Près du rivage bordé par la mer,<br>
+                                        J’écris passionnément ces mots,<br>
+                                        Ponctués par mes sourires et les flots,<br>
+                                        Je te souhaite un joyeux anniversaire !</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Un reflet de ses voiles -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Un-reflet-de-ses-voiles.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Un reflet de ses voiles</h2>
+                                        <p class="poem-line">Explorateurs célestes, vagabonds de la nuit,<br>
+                                        Témoins silencieux d'un ballet infini,<br>
+                                        Sous cette voûte enchantée, nous prions,<br>
+                                        Guidés par la lumière des constellations.</p>
+                                        <p class="poem-line">Une nuit boréale, un rêve éveillé,<br>
+                                        Embrasant l'horizon astral,<br>
+                                        Jusqu'à la douce aube pâle,<br>
+                                        Les cieux se parent d'un manteau coloré.</p>
+                                        <p class="poem-line">Sous un ciel polaire, elle danse en secret,<br>
+                                        Elle prend sa source parmi les étoiles,<br>
+                                        Revêtant des couleurs de toute beauté,<br>
+                                        Dans nos iris, un reflet de ses voiles.</p>
+                                        <p class="poem-line">Les teintes de mystère d'un rare indigo,<br>
+                                        Ces éclats d'émeraude, ces reflets magnéto,<br>
+                                        Nous offrent une plongée dans l'univers,<br>
+                                        Pour être des cosmonautes de notre terre.</p>
+                                        <p class="poem-line">Voyageurs des cieux, vagabonds de la nuit,<br>
+                                        Témoins silencieux d'un ballet infini,<br>
+                                        Sous cette voûte enchantée, nous rêvons,<br>
+                                        Dans l'ancienne lueur des constellations.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Une prause -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Une-prause.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Une prause</h2>
+                                        <p class="poem-line">Ma prose, tient à peu de chose,<br>
+                                        Il fallait évidemment que j’ose,<br>
+                                        En mon trajet rencontrer la rose,<br>
+                                        Et m’accorder une sereine pause.</p>
+                                        <p class="poem-line">Ai-je besoin d’écrire plus de choses ?<br>
+                                        À quoi simplement rime ma vie,<br>
+                                        Entre besoins, idées et envies,<br>
+                                        Je me dois absolument une pause.</p>
+                                        <p class="poem-line">Il fallait que je trouve ma déclinaison,<br>
+                                        Et je n’en suis pas si loin.<br>
+                                        Car j’ai trouvé en toi l’abnégation.<br>
+                                        Il faut te conjuguer à toutes les saisons.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Vous entendez-vous ? -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Vous-entendez-vous.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Vous entendez-vous ?</h2>
+                                        <p class="poem-line">Sempiternel, léger et agaçant,<br>
+                                        Entendez-vous ce gémissement ?<br>
+                                        Celui de la perte douloureuse et immense,<br>
+                                        De tous repères et de tous sens.</p>
+                                        <p class="poem-line">Billevesées, amalgames et confusions,<br>
+                                        Se propagent et germent à profusion.<br>
+                                        Compost de mépris, profond replis identitaires,<br>
+                                        Cultivent et fertilisent l'esprit réfractaire.</p>
+                                        <p class="poem-line">Impasse, contre-sens et erreurs,<br>
+                                        Jalonnent un sombre labyrinthe.<br>
+                                        Tortueuses tranchées sans lueur,<br>
+                                        Les lumières se sont éteintes.</p>
+                                        <p class="poem-line">Halte, on ne peut plus s'entendre :<br>
+                                        Sous le joug poussiéreux de l'absence,<br>
+                                        La raison capitule et fait silence,<br>
+                                        L'esprit se conjugue avec méandre.</p>
+                                        <p class="poem-line">Ici-bas, sévit la tranchante opinion,<br>
+                                        Les religions et croyances sont légions.<br>
+                                        Dans une cacophonie, bataille existentielle,<br>
+                                        L'intellect perd pied, divague, et bat de l'aile.</p>
+                                        <p class="poem-line">Honte à qui choisit cette voie !<br>
+                                        Perdons-nous à ma manière,<br>
+                                        Écoutez ma seule voix,<br>
+                                        Promesse d'une nouvelle aire.</p>
+                                    </div>
+                                </div>    
+                            </div>
+                            <!-- Résonances Identitaires -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Resonances-identitaires.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Résonances Identitaires</h2>
+                                        <p class="poem-line">Au-delà des masques, des apparences,<br>
+                                        Suivant son rythme, sa cadence,<br>
+                                        Cette étrange fusion de personnalités,<br>
+                                        Sculpte l'être humain dans sa complexité.</p>
+                                        <p class="poem-line">Traversant prisme et poussière,<br>
+                                        Elle émerge, pleine et entière,<br>
+                                        Dans de rares instants éclatants,<br>
+                                        Son essence se dévoile pleinement.</p>
+                                        <p class="poem-line">Façonnant en secret les ébauches de l'âme,<br>
+                                        Parmi les obscurs recoins de l'esprit,<br>
+                                        Les pensées interdites, innocentes ou infâmes,<br>
+                                        Sillonnent la mémoire, où l'histoire se tapis.</p>
+                                        <p class="poem-line">Au creux d'une quête incessante,<br>
+                                        Elle tisse les fils de nos vies mouvantes,<br>
+                                        Explorant les recoins de notre être,<br>
+                                        Elle révèle ce qui nous a fait naître.</p>
+                                        <p class="poem-line">Entre symphonie et définition,<br>
+                                        Dans l'enfer des échos, la raison s'anime,<br>
+                                        C’est un chant divin, une partition,<br>
+                                        Au-delà des mots, sublime et intime.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Tout me rappelle -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Tout-me-rappelle.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Tout me rappelle</h2>
+                                        <p class="poem-line">Ton ombre me hante, jour et nuit,<br>
+                                        Un cruel manque m'assombrit,<br>
+                                        Un murmure dans chaque recoin,<br>
+                                        Amer rappel, tu es si loin.</p>
+                                        <p class="poem-line">Ce vide déchirant,<br>
+                                        Ces caresses latentes,<br>
+                                        Ce corps brûlant,<br>
+                                        Sensation poignante.</p>
+                                        <p class="poem-line">Je comble, navré, ces silences,<br>
+                                        Par des souvenirs en errance,<br>
+                                        Par de grands rires solitaires,<br>
+                                        Résonnant, nostalgiques, dans l'air.</p>
+                                        <p class="poem-line">Les jours s'étirent, sans toi, sans répit,<br>
+                                        Trop de pensées bien présentes,<br>
+                                        Trop de secondes si oppressantes,<br>
+                                        Ton absence jamais ne vieillit.</p>
+                                        <p class="poem-line">Ce vide déchirant,<br>
+                                        Ces caresses latentes,<br>
+                                        Ce corps brûlant,<br>
+                                        Sensation tranchante.</p>
+                                        <p class="poem-line">Nos endroits ont comme unique sujet,<br>
+                                        Les vestiges de nos regards échangés,<br>
+                                        Les reliques des moments partagés.<br>
+                                        Ils effleurent, ton âme, ici, à jamais.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Malgré les orages -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Malgre-les-orages.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Malgré les orages</h2>
+                                        <p class="poem-line">Parmi les souvenirs et les rires enjoués,<br>
+                                        L'enfance survit, son fardeau plus léger.<br>
+                                        Dans l'ombre douce d'un passé discret,<br>
+                                        Résonnent faiblement ses jours délaissés.</p>
+                                        <p class="poem-line">Ses instants joyeux, bien que lointains,<br>
+                                        Resteront des spectres dans nos chemins.<br>
+                                        Les sourires de passage et les jeux enjoués,<br>
+                                        Se perdent dans les fondations de nos réalités.</p>
+                                        <p class="poem-line">Les peines d'antan, dans les mémoires gravées,<br>
+                                        Disparaissent dans les nouvelles joies partagées,<br>
+                                        Dans le calme des jours, la paix retrouvée,<br>
+                                        Se dissipent les ombres de nos vies passées.</p>
+                                        <p class="poem-line">Le visage vieillit, dans le miroir du temps,<br>
+                                        Se transforment en éclats de diamants.<br>
+                                        À chaque souvenir, à chaque sourire croisé,<br>
+                                        Nous avançons, calme, le cœur apaisé.</p>
+                                        <p class="poem-line">Les rêves candides, tels des flammes dans la nuit,<br>
+                                        Alimentent ardemment nos prières et nos envies.<br>
+                                        Dans les épreuves, une vérité se dégage,<br>
+                                        L'enfant en nous grandit, malgré les orages.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Larmes enneigées -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Larmes-enneigees.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Larmes enneigées</h2>
+                                        <p class="poem-line">La neige et ses flocons recouvrent tendrement,<br>
+                                        Les dernières demeures prises dans un vent glacé.<br>
+                                        Les noms calligraphiés de ceux qui furent vivants.<br>
+                                        Où te trouves-tu, toi, ma douce aimée ?</p>
+                                        <p class="poem-line">Mes larmes coulent, mon regard devient flou,<br>
+                                        Elles tombent et marquent mon passage,<br>
+                                        Voici les seules traces de mon voyage,<br>
+                                        Où es-tu ? Où te caches-tu ? Je deviens fou…</p>
+                                        <p class="poem-line">Peut-être dans le tremolo d'un cristal égaré,<br>
+                                        Ou sous la lune, éternelle, entourée de glace.<br>
+                                        Ton esprit traverse la brume, dans l'air givré,<br>
+                                        Et dans ce blanc manteau, je cherche ta trace.</p>
+                                        <p class="poem-line">Me guideras-tu parmi vents et monts,<br>
+                                        Vers l'endroit qui porte ton prénom ?<br>
+                                        Ma mémoire vacille... et ne suffit plus,<br>
+                                        Par milliers, les éléments m'ont vaincu.</p>
+                                        <p class="poem-line">Mes souvenirs s'effacent, et ainsi ce jour,<br>
+                                        Sous ce linceul d'hiver, je te perds mon amour.<br>
+                                        Malgré l'envie de prier avec toi, là où tu gis,<br>
+                                        Je t’appelle en silence, espérant un doux sursis.</p>
+                                        <p class="poem-line">Quand le temps sera clément,<br>
+                                        Je te le promets, je serai présent.<br>
+                                        Parmi les tombes à foison,<br>
+                                        Avec toi pour notre communion.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Libre de poèmes -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Libre-de-poemes.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Libre de poèmes</h2>
+                                        <p class="poem-line">Toi qui des doigts effleures,<br>
+                                        Cet intriguant ouvrage,<br>
+                                        Toi qui occupes tes heures,<br>
+                                        À tourner pages après pages,</p>
+                                        <p class="poem-line">Quoi de mieux, il me semble,<br>
+                                        Pour que pousse ta curiosité,<br>
+                                        Pour que l'on soit ensemble,<br>
+                                        À travers les rimes névrosées.</p>
+                                        <p class="poem-line">Ne me crois pas expert,<br>
+                                        J'écris bien peu de vers,<br>
+                                        Et seule ton imagination,<br>
+                                        Comblera tes déceptions.</p>
+                                        <p class="poem-line">Ces mots sont des ailes fragiles,<br>
+                                        Pour s'évader des jours futiles.<br>
+                                        Tu trouves mes vers un peu fous ?<br>
+                                        Rassure-toi, je ne mords pas du tout.</p>
+                                        <p class="poem-line">Je n'ai trouvé aucun libraire,<br>
+                                        À qui ces textes peuvent plaire.<br>
+                                        Dans mon plus beau malheur,<br>
+                                        J'ai un unique lecteur.</p>
+                                        <p class="poem-line">Libre de poèmes,<br>
+                                        Chaîne de mots,<br>
+                                        Livre de bohèmes,<br>
+                                        Idées à vau-l'eau.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Quel chemin de résilience ? -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Quel-chemin-de-resilience.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Quel chemin de résilience ?</h2>
+                                        <p class="poem-line">Dans l'ombre dense d'un passé terni,<br>
+                                        À ma sombre mémoire, je souris.<br>
+                                        Laissant sur le bord de ma route,<br>
+                                        Les éclats brisés d'une longue déroute.</p>
+                                        <p class="poem-line">Et quel que soit le prix qu'il en coûte,<br>
+                                        Je trace mon chemin, malgré les doutes,<br>
+                                        Aux lueurs d'un avenir infini,<br>
+                                        Je crois avoir compris.</p>
+                                        <p class="poem-line">Dans chaque épreuve, une leçon je lis,<br>
+                                        Après chaque assaut je survis.<br>
+                                        Dans le tourbillon du temps qui circule,<br>
+                                        Frôlant l'abîme, mon être s'articule.</p>
+                                        <p class="poem-line">Bravant maints et périlleux obstacles,<br>
+                                        Parmi mes convictions, mon destin calcule,<br>
+                                        Prenant chaque défi comme un spectacle,<br>
+                                        Dans la danse infinie des particules.</p>
+                                        <p class="poem-line">Renaissant étranger à tous ces cris,<br>
+                                        Attaquant, sans l'opportunité d'un répit.<br>
+                                        Perdu dans les abysses, je module,<br>
+                                        L'intensité des chocs sur ma capsule.</p>
+                                        <p class="poem-line">Dans chaque bataille, mon âme se débat,<br>
+                                        Parmi les affronts, elle se dresse, fière.<br>
+                                        Triomphante sur les chemins de croix,<br>
+                                        Dans un silence feutré, doux et solitaire.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Le soupir de la plume -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Le-soupir-de-la-plume.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Le soupir de la plume</h2>
+                                        <p class="poem-line">La mer érode sur le rivage,<br>
+                                        L'essence d'un infime sourire,<br>
+                                        Le parfum évanescent d'un rire,<br>
+                                        Un mot aux accents de voyage.</p>
+                                        <p class="poem-line">Son précieux répertoire,<br>
+                                        Rythme nos mémoires.<br>
+                                        Il loge en nos cœurs,<br>
+                                        Un soupir qui demeure.</p>
+                                        <p class="poem-line">Puisant dans le partage,<br>
+                                        La plume du soupir,<br>
+                                        Parcourt la plage,<br>
+                                        Et ravive le mot souvenir.</p>
+                                        <p class="poem-line">La plume parfois sournoise,<br>
+                                        Enlace, mêle et croise,<br>
+                                        Lie, rive et unit les sens,<br>
+                                        En espiègles réminiscences.</p>
+                                        <p class="poem-line">Ensemble la plume et la mer,<br>
+                                        Commémorent la vie en plein air,<br>
+                                        Aux cris de joie les plus beaux,<br>
+                                        Encre et vagues font écho.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- L'ultime souffle de l'amour -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/L-ultime-souffle-de-l-amour.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>L'ultime souffle de l'amour</h2>
+                                        <p class="poem-line">Seuls les regards complices des premières heures,<br>
+                                        Révèlent doucement les promesses de bonheur.<br>
+                                        Seuls de tendres et lents balbutiements,<br>
+                                        Font fleurir une histoire, empreinte de sentiments.</p>
+                                        <p class="poem-line">Histoire de deux corps, en harmonie trouvée,<br>
+                                        Grâce à un destin, grâce à la force de l'union.<br>
+                                        Histoire d'âmes, libres de tout rejet,<br>
+                                        Une douce étreinte, les prémices de la dévotion.</p>
+                                        <p class="poem-line">Seuls de sincères mots prononcés,<br>
+                                        Dans le souffle du partage, deviennent vérités.<br>
+                                        Seules les confessions révélées en plein jour,<br>
+                                        Renforcent les fondations, cimentent les amours.</p>
+                                        <p class="poem-line">Discussions douces, regards intenses,<br>
+                                        Les souvenirs se mêlent, dans l'aisance,<br>
+                                        Discussions profondes, sourires partagés,<br>
+                                        Les premières paroles d'un couple enlacé.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Un possible -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Un-possible.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Un possible</h2>
+                                        <p class="poem-line">Du premier terme au dernier,<br>
+                                        Dans tous les sens possibles,<br>
+                                        Mes mots contradictoires et fermés,<br>
+                                        Limitent ma pensée au possible.</p>
+                                        <p class="poem-line">Variés mais redondants au possible,<br>
+                                        Il n’est rien qui ne m’est permis,<br>
+                                        Car tout en moi se contredit,<br>
+                                        Et je m’acharne à la vie.</p>
+                                        <p class="poem-line">Poussant d’intenses et hauts cris,<br>
+                                        Ils nomment cela folie,<br>
+                                        Partout et même là où déraison sévit,<br>
+                                        De cet endroit je cherche la sortie.</p>
+                                        <p class="poem-line">Mon esprit s’abîme à l’abîme,<br>
+                                        Et je cherche malgré moi la rime,<br>
+                                        En demandant à quoi cela rime,<br>
+                                        De ce lieu je suis l’hymne.</p>
+                                        <p class="poem-line">Endroit où je remercie les lumières,<br>
+                                        Éclairant l’avant et l’arrière,<br>
+                                        Elles ciblent les plus sombres recoins,<br>
+                                        Et en de violentes pensées je m'y joins.</p>
+                                        <p class="poem-line">Aux plus lourdes idées de l’existence,<br>
+                                        Je lui réponds cent questions,<br>
+                                        Et avec mes lourdes abstinences,<br>
+                                        Je me demande comment je pense.</p>
+                                        <p class="poem-line">J’imagine les possibles,<br>
+                                        Dans la pluralité des réalités,<br>
+                                        Les esprits se maudissent à jamais,<br>
+                                        Au-devant d’actes impossibles...</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Dans chaque revers -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Dans-chaque-revers.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Dans chaque revers</h2>
+                                        <p class="poem-line">Dans l'art de la défaite avec honneur,<br>
+                                        Par-delà la simple quête de gloire,<br>
+                                        Étreindre la chute avec pudeur,<br>
+                                        Dans la perte, trouver sa victoire.</p>
+                                        <p class="poem-line">Au-delà des feux de la compétition,<br>
+                                        Se tenir debout malgré l'adversité,<br>
+                                        Loin de toute quête de domination,<br>
+                                        Privilégier l'intégrité avec fierté.</p>
+                                        <p class="poem-line">Dans l'ombre de la défaite, trouver la lumière,<br>
+                                        Résister aux sirènes de la vanité,<br>
+                                        Loin des artifices, loin de la colère,<br>
+                                        Accepter avec grâce la réalité.</p>
+                                        <p class="poem-line">Dans la perte, une leçon à méditer,<br>
+                                        Une voie vers une grandeur d'âme,<br>
+                                        Car c'est dans la manière de se relever,<br>
+                                        Que se dessine la véritable flamme.</p>
+                                        <p class="poem-line">Ainsi, dans chaque revers, une opportunité,<br>
+                                        De grandir, de s'élever, de se réinventer,<br>
+                                        Car la vraie force réside dans la dignité,<br>
+                                        Dans la manière de savoir perdre et accepter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Une raison de vivre -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Une-raison-de-vivre.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Une raison de vivre</h2>
+                                        <p class="poem-line">Ce son déchirant d’une âme brisée,<br>
+                                        Ce puissant cri dans la voûte étoilée,<br>
+                                        Cet appel résonnant dans le lointain,<br>
+                                        Pour une vie qui lui glisse des mains.</p>
+                                        <p class="poem-line">Cet effroi, si vivant de la perte,<br>
+                                        Ce froid, si intense de l’oubli,<br>
+                                        Ses vaines tentatives expertes,<br>
+                                        Pour, de force, lui insuffler la vie.</p>
+                                        <p class="poem-line">Cet instant cruel s’éternise,<br>
+                                        Cette âme impuissante s’étiole.<br>
+                                        Ces battements, son cœur s’affolent,<br>
+                                        Pour ceux de sa belle promise.</p>
+                                        <p class="poem-line">Ses yeux vides de couleur,<br>
+                                        Sa peau d’une terrible pâleur,<br>
+                                        Son regard perdu dans le ciel,<br>
+                                        Pour lui il n’y avait qu’elle.</p>
+                                        <p class="poem-line">Cet espace, emplit de silence,<br>
+                                        Cet endroit clos, étouffant,<br>
+                                        Son corps exténué s’allongeant,<br>
+                                        Seule sa voix s’élance.</p>
+                                        <p class="poem-line">Ses sanglots, plein de haine,<br>
+                                        Ce chagrin, dont il est ivre,<br>
+                                        Son esprit, assiégé par la peine,<br>
+                                        Cherche une raison de vivre.</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- L'être du début -->
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/L-etre-du-debut.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>L'être du début</h2>
+                                        <p class="poem-line">Dans l'éclat changeant du passé révélé,<br>
+                                        S'entrelacent l'enfance et ses vérités.<br>
+                                        Des instants candides, des bonheurs persistants,<br>
+                                        Éclairent les jours sombres de leurs chants.</p>
+                                        <p class="poem-line">Les rires éclatants dans les maisonnées,<br>
+                                        Se heurtent aux pleurs de nuits tourmentées.<br>
+                                        Les rêves radieux et les jeux insouciants,<br>
+                                        Masquent parfois des peines d'enfant.</p>
+                                        <p class="poem-line">Au cœur du tumulte où les mots s'égarent,<br>
+                                        Les quolibets s'éteignent, loin de la clarté.<br>
+                                        Dans l'étreinte franche des amis présents,<br>
+                                        Se trouve la clé des cœurs vaillants.</p>
+                                        <p class="poem-line">Les saisons passent, les corps grandissent,<br>
+                                        Les épreuves forgent, les âmes se polissent.<br>
+                                        La douce candeur mue en un âge de raison,<br>
+                                        Avec un bagage de peines en floraison.</p>
+                                        <p class="poem-line">Chaque pas vers l'avenir est un mélange,<br>
+                                        De souvenirs dorés et de défis étranges.<br>
+                                        Les contours de l'enfance restent en suspens,<br>
+                                        Et le futur demeure en arrière-plan.</p>
+                                        <p class="poem-line">Les rêves d'autrefois guident les choix,<br>
+                                        Les erreurs passées jalonnent les voies.<br>
+                                        À ce moment, une profonde vérité se dégage,<br>
+                                        L'enfant en nous éclaire notre passage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/La-realite-se-derobe.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>La réalité se dérobe</h2>
+                                        <p class="poem-line"> Dans les salles du septième art,<br>
+                                        Les écrans nous donnent à voir,<br>
+                                        Des films étranges, au-delà du réel,<br>
+                                        Bravant l'impossible et l'éternel.</p>
+                                        <p class="poem-line"> Les yeux rivés sur des personnages,<br>
+                                        Avec des idées semblables aux nôtres,<br>
+                                        Dans de nouveaux et étranges rivages,<br>
+                                        Ils traversent la vie comme nous autres.</p>
+                                        <p class="poem-line"> Entre réalité et étonnante fiction,<br>
+                                        Les frontières entrent en fusion.<br>
+                                        Toute ressemblance à ce héros fictif,<br>
+                                        Éveille en nous des souvenirs furtifs.</p>
+                                        <p class="poem-line"> Dans cette salle confortable et obscure,<br>
+                                        Ils osent parfois briser le quatrième mur,<br>
+                                        Nous plongeant au cœur d'un univers,<br>
+                                        Où la fiction s'exprime et nous éclaire.</p>
+                                        <p class="poem-line"> Dans ce lieu où les rêves prennent vie,<br>
+                                        Chaque image est une invitation à l'infini,<br>
+                                        Un voyage au-delà des limites connues,<br>
+                                        Explorant des mondes où tout est suspendu.</p>
+                                        <p class="poem-line"> Mais derrière ces images flamboyantes,<br>
+                                        Se cachent des peurs et des tourmentes,<br>
+                                        L'éclat de l'espoir, l'ombre de la crainte,<br>
+                                        Dans cet océan d'émotions feintes.</p>
+                                        <p class="poem-line"> Quand reviennent les lumières,<br>
+                                        Quand l'écran doucement s'assombrit,<br>
+                                        Quand la réalité se fait familière,<br>
+                                        La fiction murmure en notre esprit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Litteraire-sans-maniere.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Littéraire sans manière</h2>
+                                        <p class="poem-line"> J'ai un côté littéraire,<br>
+                                        J'écris de belles rimes claires.<br>
+                                        Pour me soustraire des ennuis,<br>
+                                        Je chante les plaisirs de la vie.</p>
+                                        <p class="poem-line"> Dans mes paroles, je trouve l'évasion,<br>
+                                        Un refuge pour mon imagination.<br>
+                                        Je peins en mots les jours ensoleillés,<br>
+                                        Et je danse dans les rêves étoilés.</p>
+                                        <p class="poem-line"> À travers les lignes de mes vers,<br>
+                                        Je capture la beauté de l'univers.<br>
+                                        Les mots sont mes complices fidèles,<br>
+                                        Qui chassent les ombres et les querelles.</p>
+                                        <p class="poem-line"> J'ai un côté littéraire,<br>
+                                        J'écris de belles rimes claires.<br>
+                                        Pour me soustraire des ennuis,<br>
+                                        Je chante les plaisirs de la vie.</p>
+                                        <p class="poem-line"> Et toi qui me parles à travers ma vérité,<br>
+                                        Ressens tu dans la vie le frisson ?<br>
+                                        Et toi qui m'invites à la création,<br>
+                                        Je cherche le couplet parfait.</p>
+                                        <p class="poem-line"> Dans l'onde des mots, je navigue sans fin,<br>
+                                        Capturant chaque écho, chaque refrain.<br>
+                                        La plume danse, légère et sincère,<br>
+                                        Tissant l'histoire de ma lumière.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/La-tension-de-l-artiste.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>La tension de l'artiste</h2>
+                                        <p class="poem-line"> Exposée, nue, elle pose,<br>
+                                        Regarder, moi, je n'ose,<br>
+                                        Devant des courbes délicates,<br>
+                                        Nos joues, deviennent écarlates.</p>
+                                        <p class="poem-line"> Le regard lourd d'intensité,<br>
+                                        D'élégant gestes mesurés,<br>
+                                        Cet été, elle est notre muse,<br>
+                                        Devant nous, confuse.</p>
+                                        <p class="poem-line"> Inspirant nos mains hésitantes,<br>
+                                        Nos pensées, toutes vacillantes,<br>
+                                        Elle incarne la beauté parfaite,<br>
+                                        L'art vivant, l'image muette.</p>
+                                        <p class="poem-line"> Profusion d'émotions dissimulées,<br>
+                                        Derrière des regards accrochés,<br>
+                                        Avec chaque coup de pinceau,<br>
+                                        Elle révèle un monde nouveau.</p>
+                                        <p class="poem-line"> Résister devient difficile,<br>
+                                        Un univers sensuel se profile,<br>
+                                        La voir tout près de moi,<br>
+                                        Sera mon unique combat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Les-esquisses-de-mes-aspirations.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Les esquisses de mes aspirations</h2>
+                                        <p class="poem-line"> Dans le silence fécond des rêves murmurés,<br>
+                                        À l'église prospère de nos souhaits établis,<br>
+                                        Chaque prière, une voûte, chaque espoir, un pilier,<br>
+                                        Résolument, je prospère sur de fertiles envies.</p>
+                                        <p class="poem-line"> Les ébauches, légions dans mes ambitions,<br>
+                                        Se projettent, secrètes, en uniques conceptions.<br>
+                                        Mes projets, singuliers, se tassent en mon atelier,<br>
+                                        Aux sciences nouvelles, à tout instant, dédiés.</p>
+                                        <p class="poem-line"> J'aime me perdre dans les confins stellaires,<br>
+                                        Mes doigts croisés, pointent alors la Voie lactée.<br>
+                                        Astres en tout genre, entourés d'antiques mystères,<br>
+                                        A travers l'immensité, source de tous mes sujets.</p>
+                                        <p class="poem-line"> Mon choix se porte sur un coin d'humanité,<br>
+                                        Les énigmes de l'âme arrivent avec spontanéité,<br>
+                                        Dois-je joindre ce thème à mon exploration ?<br>
+                                        Avec circonvolution, je jalonne les interdictions.</p>
+                                        <p class="poem-line"> En un point final à mes interrogations rebelles,<br>
+                                        En des rimes fines, qui auront tous les potentiels,<br>
+                                        Pour aborder chaque motif, chaque inspiration,<br>
+                                        Et les plus extravagantes des émotions.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                                
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Pour-la-premiere-fois.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Pour la première fois...</h2>
+                                        <p class="poem-line"> Iris à Iris,</p>
+                                        <p class="poem-line"> Attention ils se hissent,<br>
+                                        L’un et l’autre tendrement,<br>
+                                        Au rôle d’amants.</p>
+                                        <p class="poem-line"> Caresses après caresses,</p>
+                                        <p class="poem-line"> Sans que rien ne cesse,<br>
+                                        Ils cultivent la foi de l’autre,<br>
+                                        Faisant d’eux même des apôtres.</p>
+                                        <p class="poem-line"> Idées après idées,</p>
+                                        <p class="poem-line"> C’est une religion guidée,<br>
+                                        Pour la joie que l’on se procure,<br>
+                                        Qui organise sa propre filature.</p>
+                                        <p class="poem-line"> Danses après Danses,</p>
+                                        <p class="poem-line"> C’est celle que personne ne pense,<br>
+                                        Car elle se fuit elle-même,<br>
+                                        Comme un tout de même.</p>
+                                        <p class="poem-line"> Instantané dans l’avenir,</p>
+                                        <p class="poem-line"> Photo qui traverse les temps à venir,<br>
+                                        Bouteille jetée dans l’oublie,<br>
+                                        Un souvenir qui jamais ne périt.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Un-debut-inattendu.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2> Un début inattendu</h2>
+                                        <p class="poem-line"> D’un à un, mes mots tranquilles,<br>
+                                        Pour nos paroles qui s’affirment,<br>
+                                        Pour des idées qui me réaniment,<br>
+                                        Se glissent dans nos sentiments agiles.</p>
+                                        <p class="poem-line"> Moi, n’étant que le vent du matin,<br>
+                                        Toi, mon espoir, mon unique horizon,<br>
+                                        Nous qui n’étions plus qu’incertain,<br>
+                                        Nous avions cette foi, plus que de raison.</p>
+                                        <p class="poem-line"> Le lien de nos êtres,<br>
+                                        Le souffle de nos âmes,<br>
+                                        L’abîme des rêves,<br>
+                                        La force des flammes.</p>
+                                        <p class="poem-line"> Celle qui éclaire plus que de raison,<br>
+                                        Celle qui nous lie dans l’unisson,<br>
+                                        À vif, nous la suivons, pleinement,<br>
+                                        Voici, doux, l’avenir, à l'ombre du présent.</p>
+                                        <p class="poem-line"> D’un à un, ces mots pleins nous rapprochent,<br>
+                                        Regardant notre avenir, ils nous accrochent,<br>
+                                        Dans un ciel infini, sans fin,<br>
+                                        Je vois maintenant cet instant divin.</p>
+                                        <p class="poem-line"> Sur un passé léger de danse,<br>
+                                        Des promesses nouvelles et sincères,<br>
+                                        Devant toutes circonstances,<br>
+                                        Se déploient lentement dans l’air.</p>
+                                        <p class="poem-line"> Pourquoi, pour qui, comment ?<br>
+                                        Nos cœurs battent à l’unisson,<br>
+                                        Guidés par un nouvel élan,<br>
+                                        Vers l’horizon, nous avançons.</p>
+                                        <p class="poem-line"> Sous une douce lumière de l’aube naissante,<br>
+                                        Avec un écho tendre de cathédrale,<br>
+                                        Voici nos paroles franches et vaillantes,<br>
+                                        Posant le premier souffle de notre idéal.</p>
+                                        <p class="poem-line"> Cela semble sans fin,<br>
+                                        Cela sera bien nous.<br>
+                                        Cela nous absout,<br>
+                                        De tout chagrin.</p>
+                                        <p class="poem-line"> Le début me semble éclatant,<br>
+                                        La fin lointaine, douce chimère.<br>
+                                        Cet absolu, je veux y croire tant,<br>
+                                        Dans une relation si légère.</p>
+                                        <p class="poem-line"> Croisant tes yeux pour la centième fois,<br>
+                                        Mains jointes, douce tendresse,<br>
+                                        Celle qui rit et avec qui tout progresse,<br>
+                                        Étreinte joyeuse, nouveaux émois.</p>
+                                        <p class="poem-line"> Un pas convergeant, et tes contours s’éclairent,<br>
+                                        Un air harmonieux, et nos paroles s’embrasent.<br>
+                                        Je vois maintenant le temps qui s’étend,<br>
+                                        Et les secondes qui nous enlacent.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="poem-container">
+                                    <img loading="lazy" src="img/Une-fin-familiere.webp" class="poem-image">
+                                    <div class="poem-text">
+                                        <h2>Une fin familière</h2>
+                                        <p class="poem-line"> D’un à un, mes mots avides,<br>
+                                        Pour nos paroles qui ne s’assument,<br>
+                                        Pour des idées qui me consument,<br>
+                                        S’emmêlent dans nos sentiments livides.</p>
+                                        <p class="poem-line"> Moi, n’étant que de la destinée, le pantin,<br>
+                                        Toi, mon avenir, mon unique abandon,<br>
+                                        Nous, qui n’étions un peu plus que rien.<br>
+                                        Nous avions cette foi, plus que de raison.</p>
+                                        <p class="poem-line"> Le lien de nos êtres,<br>
+                                        Le puit de nos âmes,<br>
+                                        L’abysse du paraître,<br>
+                                        La peur de la lame.</p>
+                                        <p class="poem-line"> Celle qui tranche plus que de raison,<br>
+                                        Celle qui nous voit plus à l’unisson,<br>
+                                        À vif, nous la subirons, lentement,<br>
+                                        Voici, cruel, l’avenir, devant le présent.</p>
+                                        <p class="poem-line"> D’un à un, ces mots vides m’éloignent.<br>
+                                        Regardant notre future, ils m’empoignent,<br>
+                                        Dans une crevasse béante sans fond,<br>
+                                        Je vois maintenant cet instant si profond.</p>
+                                        <p class="poem-line"> Sur un passé lourd d’errance,<br>
+                                        Des demandes futiles et légères,<br>
+                                        Devant toutes circonstances,<br>
+                                        Se répandent lentement dans l’air.</p>
+                                        <p class="poem-line"> Pourquoi, pour qui, comment ?<br>
+                                        Sans plus aucune voix,<br>
+                                        Sans plus aucune croix.<br>
+                                        Nous voit-on encore errants ?</p>
+                                        <p class="poem-line"> Sous une douce lumière de fin du jour,<br>
+                                        Avec un silence sourd de cathédrale,<br>
+                                        Voilà nos balbutiements en un râle,<br>
+                                        Mettant le point final sur notre amour.</p>
+                                        <p class="poem-line"> Cela semble sans fin,<br>
+                                        Cela ne sera pas nous.<br>
+                                        Cela ne nous absout,<br>
+                                        D’aucun quatrain.</p>
+                                        <p class="poem-line"> Le début me semble étranger,<br>
+                                        La fin pénible mais si familière.<br>
+                                        Cet absolu je ne peux y déroger,<br>
+                                        Dans une relation si aventurière.</p>
+                                        <p class="poem-line"> Croisant tes yeux pour la première fois,<br>
+                                        Caresses hésitantes, dernière tendresse,<br>
+                                        Celle qui souffre et avec qui tout cesse,<br>
+                                        Étreinte douloureuse, derniers émois.</p>
+                                        <p class="poem-line"> Un pas divergeant, et tes contours s’effacent,<br>
+                                        Un air dissonant, et nos paroles s’envolent.<br>
+                                        Je vois maintenant le temps qui passe,<br>
+                                        Et les secondes qui te volent.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xxl-4 mb-3">
+                    <div id="wordMapContainer">
+                        <canvas id="wordMap"></canvas>
+                    </div>
+                </div>
+              </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div id="modal-close">&times;</div>
+                    <p id="modal-text"></p>
+                </div>
+            </div>
+        </main>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="creation" role="tabpanel" aria-labelledby="creation-tab">
+      <div class="creation">
+        <div class="container mt-5">
+          <form id="poemCreationForm" class="bg-light p-4 rounded shadow">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="poemTitle" placeholder="Quel est le titre du poèmes">
+            </div>
+            <div class="mb-3" id="quatrainsContainer">
+              <textarea class="form-control mb-2 quatrain" id="quatrain1" rows="4" placeholder="Écrivez le premier quatrain..."></textarea>
+            </div>
+            <button type="button" id="addQuatrainButton" class="btn btn-secondary mb-3">Ajouter un autre quatrain</button>
+            <button type="submit" id="createPoemButton" class="btn btn-primary mb-3">Créer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+      <!-- Here is where TIXAE Agents renders the widget. -->
+      <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+    </div>
+    
+    <!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+    <script defer>
+      (function() {
+          window.VG_CONFIG = {
+              ID: "15vxlunjix5ypqlc", // YOUR AGENT ID
+              region: 'eu', // YOUR ACCOUNT REGION 
+              render: 'bottom-right', // can be 'full-width' or 'bottom-left' or 'bottom-right'
+              stylesheets: [
+                  // Base TIXAE Agents CSS
+                  "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                  // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+              ],
+              // THIS IS SUPPOSED TO BE CHANGED OR REMOVED.
+              // user: {
+              //     name: 'John Doe', // User's name
+              //     email: 'johndoe@gmail.com', // User's email
+              //     phone: '+1234567890', // User's phone number
+              // }
+              // Optional user data -- end
+              // **
+              // userID: 'USER_ID', // If you want to use your own user_id
+              // autostart: true, // Whether to autostart the chatbot with the proactive message
+          }
+          var VG_SCRIPT = document.createElement("script");
+          VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+          VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
+          document.body.appendChild(VG_SCRIPT);
+      })()
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/poems.js"></script>
+  <script src="scripts/creation.js"></script>
+</body>
+</html>
