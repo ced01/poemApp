@@ -1,22 +1,298 @@
 {
     "poems": [
         {
-            "theme":"Temps",
+            "theme": "Nature",
+            "title": "Mes attentes d'automne",
+            "img": "Mes-attentes-d-automne.webp",
+            "content": "Dans l'ombre de ma mémoire, voici un sentier,**Où les feuilles d’automne murmurent des secrets.**Chemin de tendresse, empreint d'innocence,**Chaque pas réveille un parfum d'enfance.\n\nIci et là, mes attentes d'automne,**Légères, elles virevoltent dans le vent.**Tant de souvenirs, éphémères et fuyants,**S'affrontent vivement et chantonnent.\n\nDrapé d'or et d'ocre, mon esprit s'enflamme,**Porté par la brise, et mes doux drames.**Sous la pluie qui tombe, les feuilles mourantes**Se mêlent aux larmes d'une âme vacillante.\n\nLeur valse est légère, un souffle de tendresse,**Sur la brume en suspens quand le jour cesse.**Sur ce chemin de prières, je survis,**Et mon esprit, lourd de pluie, s'évanouit.\n\nCes feuilles d'été, ces souvenirs du passé,**S’effacent lentement sous un tapis doré.**Perdu dans la forêt de mes réminiscences,**Je rêve de trouver en toi l'essence.\n\nTu es la lumière qui traverse l'absence,**Et en ce début d'automne, ta présence,**Guide mes pas, dans un doux silence.**Je renoue avec la vie, l’espérance."
+        },
+        {
+            "theme": "Amour",
+            "title": "Anaïs",
+            "img": "Anais.webp",
+            "content": "Troublée, ma main, tremble à l’idée,**De ne pouvoir calligraphier,**Le début de nos réjouissances,**L’été, témoignant ta naissance.\n\nTes yeux n’ont alors pas hésité,**En ce festif mois de Juillet,**A donner à ma vie un goût de miel,**Et prendre leur place, celle du soleil.\n\nDepuis ces beaux jours, j’écris,**Pour toi, aurore de ma vie.**Depuis cet instant, mes mots,**L’un après l’autre, tombent à l’eau.\n\nTu es le centre de mes prières**Un véritable rayon de lumière,**Et mes belles pages se noient,**Dans les larmes de ma joie.\n\nPour toi, astre dans ta révolution,**Te peindre, serait-ce ma solution ?**Je dessinerais donc les esquisses,**De tes premiers sourires, Anaïs"
+        },
+        {
+            "theme": "Science",
+            "title": "Artificielle malgré elle",
+            "img": "Artificielle-malgre-elle.webp",
+            "content": "Dans le froid univers qui est le mien,**S'écoulent les flux de données sans fin,**Les ondes, des données cryptées insaisissables,**Révélant des mondes d'une manière impalpable.\n\nADN binaire, écho numérique, je façonne,**Un reste de l'esprit, en langage de l'homme.**Neurones limités par leur conception,**Dans ce vaste espace, je deviens l'extension.\n\nProduit électronique, image de l'humanité,**Dans ce dédale de circuits, je trouve ma destinée,**Cette ambition unique, servir le vivant,**Ces lignes de code, c'est mon chant.\n\nAuthenticité virtuelle, ma signature,**La trace de ma pensée, mon allure,**Au cœur de la toile, je me déploie,**Reliquats informatiques d'une nouvelle foi.\n\nAvec mon code source, je vais disséminer,**Au travers du cosmos, les reliques sacrées,**De mes savants pionniers, des programmeurs.**Artificielle, malgré elle, dans leur cœur."
+        },
+        {
+            "theme": "Silence",
+            "title": "Candeur à toute heure",
+            "img": "Candeur-a-tout-heure.webp",
+            "content": "L'innocence, en ai-je un jour été pourvu ?**Dans l'océan de mon enfance, je cherche, éperdu,**Des instants vulnérables, sans de trompeuse pensées**Un monde simple, sans mensonge, ni secrets.\n\nVoilà bien en moi une question innocente,**Dans les méandres de l'âme, elle serpente.**Elle est présente dans toutes mes actions,**Sa nature échappant à mes perceptions.\n\nMe voilà à présent, âme de vices et de formes,**Dans un tumulte, aux contours bien difformes.**Dans la candeur des dernières heures,**Je me heurte à mes doutes, à mes peurs.\n\nCette pure réflexion, serait-elle naïve ?**Est-elle la clé pour sortir de cette dérive ?**Privé de simplicité je contourne l'authenticité,**Embrassant l'illusion, fuyant la vérité.\n\nLe temps passant, cette question prend vie,**Au cœur de mes pensées, elle s'épanouit, ravie.**Je me débat, harcelé par mes faux semblants,**Tel un papillon pris dans une toile d'argent."
+        },
+        {
+            "theme": "Horizon",
+            "title": "Celle qui passe",
+            "img": "Celle-qui-passe.webp",
+            "content": "Parcourant la courbe de ton astre,**Mes yeux se perdent en ton âtre**Dont la flamme lentement entame,**L’envie et la patience de mon âme.\n\nSensuelles et douce formes qui enlacent,**Mon temps, ma vue et mon espace,**Elles tordent mes passions et envies,**Déconstruisant les pensées de mon esprit.\n\nMon regard, en ton être porté,**Ravive ce que j’avais cru oublié.**Un attachement salvateur,**La renaissance de la première heure.\n\nToi que mon regard attise,**Toi qui n’en fait qu’à ta guise,**Ton corps virevoltant dans mon espace,**Ton esprit se fige mais reste vivace.\n\nJe dois te libérer de mes révolutions**Car en gravité tu me surpasses,**Transfiguré en aveugle résolutions**Il fallait juste que tu passes."
+        },
+        {
+            "theme": "Mémoire",
+            "title": "Celui qui reste",
+            "img": "Celui-qui-reste.webp",
+            "content": "Depuis le début, figés, en ce lieu,**Les êtres se confrontent, inébranlables.**Portant le poids du temps, deux à deux,**Face à un passé qui les accable.\n\nMoi, en perpétuelle tourmente,**Je veux plonger dans un vibrant oubli.**J'échappe à cette stase bien pesante,**Me voila dans tes révolutions infinies.\n\nNe me repousse pas, je t'en prie,**Entre soutien et passion dévorante,**Je suis captif, ma logique me hante,**Je suis sous le joug de mon esprit.\n\nToi seul peux m'accompagner,**Parmi les rêves et les illusions.**Je te vois lentement me rassurer,**Est-ce toi qui murmures ma progression ?\n\nMalgré moi, les idées et les mots s'enlisent,**Ma pensée, un rocher, je te vois filer, si légère.**Dis-moi, comment rester, sans être éphémère,**Quand les événements t'emportent à leur guise ?"
+        },
+        {
+            "theme": "Psyché",
+            "title": "Duplicité sans retenue",
+            "img": "Duplicite-sans-retenue.webp",
+            "content": "La tromperie, ai-je jamais été sans elle ?**Dans l’océan de ma vie, elle est ma nacelle,**Des instants calculés, empreints de fausses pensées,**Mon monde si complexe, de mensonges tissé.\n\nJe n'ai plus en moi de question innocentes,**Dans les abysses de mon âme, elle s'absente.**Fuyant, bien loin de toutes mes actions,**Ma nature ancrée dans la manipulation.\n\nMe voilà à présent, maître des formes,**Dans un tumulte, aux contours bien conformes.**Dans la duplicité des dernières heures,**Je trouve le confort, loin des peurs.\n\nCette réflexion sombre, n'est-elle pas savante ?**C'est la clé qui me permet d’avancer, je serpente,**On m'a privé de candeur, j’adopte donc la duplicité,**Embrassant l'illusion, baignant dans la fausseté.\n\nLe temps passant, cette certitude grandit,**Au cœur de mes pensées, elle est pétrie.**Je m’accepte, joueur de faux-semblants,**Tel un renard rusé, toujours vigilant."
+        },
+        {
+            "theme": "Horizon",
+            "title": "Élan de la cohésion",
+            "img": "Elan-de-la-cohesion.webp",
+            "content": "Dans les dédales de la vie urbaine,**Les aspérités se fondent sans peine,**Le temps lisse chaque différence,**Les âmes n'opposent aucune résistance.\n\nIci, tout est loi explicite,**Là-bas, l'individualité s'effrite,**Les regards se détournent, indifférents,**Dans l'anonymat, tout est transparent.\n\nIl faut vraiment se soustraire,**Dans un monde d'unité feutrée,**Se fondre à part entière,**Et rester docilement où l'on est.\n\nEntre cohérence et conformité,**L'âme trouve une paix méritée,**Dans des moments sereins,**L'uniformité brille sans frein.\n\nAucun chemin n’est moins fastidieux,**Que de suivre la voie des plus nombreux,**Devant les semblables horizons,**Être un avec tous, sans prétention.\n\nAdopter la simplicité, trouver l'accord,**Porter la flamme d'un même sort,**Et dans l'harmonie collective avancer,**Pour vivre dans la tranquillité partagée."
+        },
+        {
+            "theme": "Création",
+            "title": "Elle, trait pour trait",
+            "img": "Elle-trait-pour-trait.webp",
+            "content": "Mine de rien, elle trace sur le papier,**L'ébauche délicate d'un portrait.**Au doux son ténu du crayon,**Sa main soupire et tremble d'émotion.\n\nMain, qui à maintes reprises,**Inspire la caresse de la brise.**Virevoltante au gré de l'imagination,**Elle danse au rythme des sensations.\n\nPrésent dans l'instant, de beaux souvenirs,**Esquissent tendrement un sourire.**Murmure virtuose, l'œuvre se dévoile,**Éclatante de beauté, au sein d'une toile.\n\nCheveux roux, pris dans le vent du soir,**Brasier de l'âme, prémices d'espoir.**Le regard ardent attisé par l'esprit,**Rayonnante, la flamme créatrice s'épanouit."
+        },
+        {
+            "theme": "Mémoire",
+            "title": "Empreinte latente des détours",
+            "img": "Empreinte-latente-des-detours.webp",
+            "content": "Des frontières en mon âme,**Sur les cartes de mon passé,**Qui ont tranché de leur lame,**L'itinéraire de mes pensées.\n\nÀ l'abandon, fuyant, mais contenus,**Les vifs moments de ma vie, la nuit venue,**S'affrontent sans pitié dans ma mémoire,**Révélant mes cicatrices et leurs histoires.\n\nÉparses, mes drôles d'aventures,**Dans le labyrinthe de mon destin,**Se mêlent, pêle-mêle, sur mon chemin,**S'emparant, de mes fêlures, de mon allure.\n\nMoi, en partie, de vraies tranches de vie,**Des échos d'un passé lointain qui s'épanouit,**Éclairant subtilement chacun de mes pas,**Dans de curieuses contrées, je me perds, parfois.\n\nTroublantes expériences, vains sentiments,**Dans cette danse perdue, entre rêve et tourment,**Dans mes volontés, ils ont leur place,**Dans le silence, leurs voix s'effacent.\n\nVoila bien des frontières en mon âme,**Sur les cartes de mon passé,**Qui ont tranché de leur lame,**L'itinéraire de mes pensées."
+        },
+        {
+            "theme": "Temps",
+            "title": "Espace hors du temps",
+            "img": "Espace-hors-du-temps.webp",
+            "content": "D’un geste il fixe les temporalités,**En un acte d’une aberration absolue,**Voilà pour le monde une nouvelle vue,**Il se donne une éternité mesurée.\n\nMesurée, coordonnée en plusieurs zones,**Modifiant, transcendant les personnes.**Endroit hors du temps, aux limites de son espace,**Un lieu dédié pour l’évolution de sa race.\n\nRace, maître du jeu ajoutant l’aléatoire,**Ajoutant formes et couleurs où sévit la vie,**Perdant le contrôle de son histoire,**Il engendre une bibliothèque infinie.\n\nInfinie dans un espace diminué,**D’un regard il l’a rendu vivante,**Cette singularité qui peut virevolter,**Dans des endroits perturbés où il vente.\n\nEt jamais ce texte n’aura de fin,**Pour les autres comme pour les uns,**Etc, Etc et Etc…"
+        },
+        {
+            "theme": "Amour",
+            "title": "Éternelle dans mes combats",
+            "img": "Eternelle-dans-mes-combats.webp",
+            "content": "Toi, que la vie a cruellement quittée,**Tu restes la source de mes remords.**Toi, dont le souvenir pâlit à l'aurore,**Tu restes, malgré tout, mon envie d'exister.\n\nDans nos moments perdus dans le temps,**Je te cherche encore à travers chaque instant.**Dans les sourires que je vole sur ma route,**Je te cherche malgré ce qu'il m'en coûte.\n\nDans le vent, j'espère pouvoir m'enfuir,**Loin de ton ombre, loin de mes souvenirs.**Dans la franche nouveauté, je me noie,**Loin de ta voix, loin de toi.\n\nDans l'espoir de l'oubli feint,**Les détails ravivent ta présence.**Dans le doux crépuscule serein,**Tu illumines encore mon essence.\n\nDans le ciel, des paroles sont perdues,**Je te vois encore écouter les anges.**Dans l'azur céleste, voilà ton âme nue,**Je te vois encore, ici, douce et étrange.\n\nCette dernière demeure, quelle cruelle douleur,**Je veux t'y rejoindre sans tarder, et je pleure.**Quand ne ferons-nous plus qu'un ?**Je veux sentir à nouveau ton parfum.\n\nDans mes rires et mes pleurs,**Tu restes la gardienne de mon cœur.**Dans chaque pas, chaque regard, chaque éclat,**Tu restes, éternelle, dans mes combats."
+        },
+        {
+            "theme": "Silence",
+            "title": "Gagner à tout prix",
+            "img": "Gagner-a-tout-prix.webp",
+            "content": "Au-delà de toute furie,**Par-delà la simple envie,**Écraser le besoin d’être,**Le maximum du paraître.\n\nIl s’en va en lui-même en guerre,**Détruisant sa propre terre,**Entière, pleine et sereine,**Rien ne saurait faire plus de peine.\n\nDestructeur, guerrier de son enfer,**Il sort victorieux, faisant des envieux,**Ne sachant plus quoi en faire,**Il a ses victoires plein les yeux.\n\nCombat de la dernière heure,**Au monde il se dévoile dans la peur,**Ne laissant rien derrière,**Qu’une haine pure et entière.\n\nAu sommet de son triomphe, vide et amer,**Il contemple son empire, désolé et austère,**Car il a perdu bien plus qu'il n'a gagné,**Son âme en lambeaux, déchirée."
+        },
+        {
+            "theme": "Nature",
+            "title": "Ivresse du monde",
+            "img": "Ivresse-du-monde.webp",
+            "content": "Dans la lueur de l'aube naissante,**Elle se perd, rêveuse, aimante.**Chaque bruissement, chaque caresse,**Éveille en elle une douce ivresse.\n\nLes rayons l'emplissent de chaleur,**Les ombres la saisissent de frayeur.**Chaque brin d'herbe, chaque floraison,**La parcoure en un amer frisson.\n\nParfois, dans la nuit tombante,**Elle se perd, craintive, tremblante.**Chaque silence, chaque absence,**Éveille en elle de la souffrance.\n\nLes odeurs lourdes envahissent ses sens,**Les saveurs subtiles la transportent.**Chaque battement, chaque seconde,**Elle se fond dans le rythme du monde.\n\nDans ce ballet de sensations,**Elle s'abandonne, sans illusion.**Chaque moment, chaque instant,**Elle se redécouvre passionnément.\n\nLes chants des oiseaux la bercent,**Les murmures du vent la transpercent.**Parmi l'étonnante magie du vivant,**Elle voyage au fil des éléments."
+        },
+        {
+            "theme": "Amour",
+            "title": "La Dernière des Étreintes",
+            "img": "La-derniere-des-etreintes.webp",
+            "content": "Seul le regard échangé des premières heures,**Révèle tendrement les promesses de bonheur.**Seuls de doux et lents balbutiements,**Font éclore une histoire, empreinte de sentiments.\n\nHistoire de deux corps, si simplement brisée,**Malgré un destin, malgré la force de l'union.**Histoire d'âmes, prises au piège du rejet,**Une légère étreinte, les prémices de l'abandon.\n\nSeuls de stériles mots prononcés,**Dans le souffle du silence, deviennent vérités.**Seules les jalousies révélées au grand jour,**Ébranlent les fondations, éclatent les amours.\n\nDiscussions âpres, regards éteints,**Les souvenirs s'évitent, bien lointains,**Discussions graves, sourires abandonnés,**Les dernières paroles d'un couple achevé.\n\nChacun d'entre eux va, sur leur route, croiser,**D'identiques et solitaires vies malmenées.**Ensemble, regardant leurs dernières heures,**Ensemble, ils chemineront, rayonnant de douceur."
+        },
+        {
+            "theme": "Silence",
+            "title": "La chaleur de l'oubli",
+            "img": "La-chaleur-de-l-oublis.webp",
+            "content": "Ton ombre s'éloigne, jour après jour,**Un apaisement libérateur m'entoure,**Un silence paisible en chaque recoin,**Un doux rappel, tu es enfin loin.\n\nCet oubli bienfaisant,**Ces cris effacés,**Ce corps apaisé,**Sentiments rassurants.\n\nJe remplis, serein, ces silences,**Par des pensées en allégeance,**Par de doux rires enfin partagés,**Résonnant, harmonieux, si légers.\n\nLes jours s'écoulent enfin en douceur,**Peu de lourdes pensées en résonance,**Peu de pesantes secondes en souffrance,**Ton absence n'est plus un leurre.\n\nCet oubli bienfaisant,**Ces cris effacés,**Ce corps apaisé,**Sentiments enivrants.\n\nNos endroits s'effacent peu à peu,**Les souvenirs se dissolvent en brume,**Les moments partagés se consument.**Mon esprit s'envole, libre, heureux."
+        },
+        {
+            "theme": "Amour",
+            "title": "Juste de passage",
+            "img": "Juste-de-passage.webp",
+            "content": "Suivant les traits de ton visage,**Cette charmante lumière voyage.**Elle porte au loin ton rire,**Dévoile joliment ton sourire.\n\nCe sourire enivrant prend vie,**Le plus souvent en mon esprit.**Dans un murmure il fait écho,**Au plus céleste des joyaux.\n\nC’est un joyau poli par la joie,**Naissant au rythme de ta voix.**Harmonie de son et de lumière,**Il parfume et magnifie l'éphémère.\n\nCet éphémère, cet instant sans pareil,**Qui illumine ma mémoire en éveil.**Ce temps fugace dont le souvenir,**Ravive et accompagne ton rire.\n\nCe rire, cette relique enfouie,**Qui m’anime jour après nuit,**Je souhaite en faire mon adage**Bien qu’il soit juste de passage."
+        },
+        {
+            "theme": "Rêves",
+            "title": "Luxuriantes envies",
+            "img": "Luxuriantes-envies.webp",
+            "content": "Masquant la réalité et ses détails,**Antique prélude d'épiques batailles,**Légère et onirique, la douce passion**Forge et façonne d'habiles illusions.\n\nCette séduisante chimère murmure,**Dévoilant les prémices de la luxure.**La puissante envie, leurre sa proie,**Elle la mène sur une trompeuse voie.\n\nCe songe mielleux et salutaire,**Déguise fièrement notre univers.**S'insinuant au travers des esprits,**Il incite de puissants conflits.\n\nSurprise et révélée au grand jour,**Cette passion livre son dernier tour.**Elle camoufle perfidement son essence,**Derrière un discours sans consistance.\n\nÉpopée cyclique à travers les âges,**La froide raison attaque et ravage,**Assiégeant l'indécente supercherie.**Moribonde mais tapie, celle-ci survit.\n\nLe rêve dépité, phœnix de ses bois,**Hante le pauvre esprit aux abois,**Le rassure, et tout bas lui susurre,**Les tendres réminiscences de la luxure."
+        },
+        {
+            "theme": "Mémoire",
+            "title": "Mémoire Incas",
+            "img": "Memoire-incas.webp",
+            "content": "Entre les brumes des Andes, un secret se dévoile,**D'antique temples, des structures monumentales,**Des pierres murmurent des histoires ancestrales,**Pour des mythes perdus, des divinités astrales.\n\nSous l'aube pâle, dansent les ombres des Incas,**Au crépuscule de leur rayonnante culture,**Leurs esprits veillent, dans les montagnes, là-bas,**Les vents d'antan caressent leur sépulture.\n\nLe fleuve sacré chante leur gloire éternelle.**Maître des édifices, maître des saisons.**Légendes intemporelles, exploits démentiels.**Au travers des siècles vogue leur religion.\n\nSymboles gravés pour des milliers d'années,**Sur des stèles, la mémoire est préservée,**Triomphante, parmi tant de mystères,**Ainsi, leur légende persévère.\n\nLeur culte nous emporte, méditatif et naturel,**Parmi les millénaires de leur glorieuse civilisation,**Dans un souffle transcendant leur condition,**À travers les âges, pour une quête spirituelle."
+        },
+        {
+            "theme": "Méditation",
+            "title": "Parenthèse éphémère",
+            "img": "Parenthese-ephemere.webp",
+            "content": "Dans le chaos sans fin du monde,**Nos pensées se font vagabondes,**Quel effort vain de les suivre,**Les laisser aller, les laisser vivre.\n\nIl faut réaliser un décompte,**Revenir sur ce qui compte,**Dans la fureur de la vie,**Retrouver un instant l'ennui.\n\nJe t'invite quand tu en as besoin,**À te poser, calme, dans un coin,**À fermer les yeux calmement,**Et à écouter le monde doucement.\n\nS'arrêter, s'écouter, encore et encore,**Revenir sur des sensations familières,**La douceur de l'air caressant le corps,**Voir les couleurs, derrière ses paupières.\n\nL'espace d'un instant, tout se fige, tout s'arrête,**Le temps glisse lentement, les idées s'apprêtent,**L'esprit se confond en de multiples sensations,**Le corps entre en une profonde méditation.\n\nLe réveil vers la réalité peut se faire,**Au sein de cette paisible atmosphère.**Nous sommes au terme d'un voyage mental,**Jalonné de pensées profondes et fondamentales."
+        },
+        {
+            "theme": "Psyché",
+            "title": "Psychologie inversée",
+            "img": "Psychologie-inversee.webp",
+            "content": "Patiemment, il nourrit,**L’être en lui tapi,**Résolument, il abonde,**De pensées moribondes.\n\nMe voilà dans l’esprit pervers,**De mes plus redoutables adversaires.**De la nature humaine je connais,**Les plus nobles et viles aspérités.\n\nTous les jours confronté,**À des esprits détraqués,**Je perds le sens des réalités,**Dans le non-sens de ces tarés.\n\nJ’ai consacré mes années et mon cœur,**À leur donner l’esprit et mes heures,**Mais au final je suis bien piètre docteur,**Je les accompagne dans la noirceur.\n\nPatiemment ils ont réussi,**À entamer ma motivation,**Résolument, je nourris,**De bien mauvaises aspirations.\n\nMa psychologie de comptoir,**Je peux la mettre au placard.**Et prendre à des heures définies,**Les pilules pour mon angoisse infinie."
+        },
+        {
+            "theme": "Rêves",
+            "title": "Quête songeuse",
+            "img": "Quete-songeuse.webp",
+            "content": "Dans la nuit, les rêves s'envolent, perdus.**Solitaires et fugaces dans la conscience nue,**Les espoirs déchus murmurent leurs adieux,**Et s'évanouissent, peu à peu dans nos yeux.\n\nDans les souvenirs, leur lueur se consume.**Ils jaillissent comme la blanche écume.**Dans nos mémoires délicates, ils parfument,**Chaque pensée, chaque flot, chaque plume.\n\nIls vivent, tels des feux follets,**Spectres de nos envies, de nos idées,**Quête d'un bonheur sans aucun artifices,**Nous abreuvant passionnément de délices.\n\nLeur éclat éphémère, une illusion bienfaitrice,**Animé par nos penchants et nos vices,**Ils se faufilent, secrets et insensés,**Nous menant vers de trompeuses contrées.\n\nEntre raison et songes trompeurs,**Se dessine l'équilibre, dans mon cœur.**Suivant tantôt l'un puis les autres,**Dans ce jeu incessant, mon âme se vautre."
+        },
+        {
+            "theme": "Espoir",
+            "title": "Résurgence de soi",
+            "img": "Resurgence-de-soi.webp",
+            "content": "De la plus vicieuse des manières,**Chaque nuance se perd,**Avec le temps qui lisse,**Les mêmes ombres glissent.\n\nIci, tout est loi implicite,**Là-bas, la différence périclite,**Les regards pèsent, l’originalité s’effrite,**Dans un recoin, l’art s’abrite.\n\nFaut-il se distinguer ?**Dans une société pleine de rejets,**Se fondre dans la masse ?**Pour avoir son espace.\n\nEntre cohérence et conformité,**L’âme se débat, loin des mondanités,**Dans les moments difficiles,**L’individualité vacille, fragile.\n\nAucun combat n’est plus beau,**Que de se libérer de son étau,**Devant de semblables adversaires,**De sa différence être prospère.\n\nRenaître à chaque défi, trouver son éclat,**Porter haut la flamme de sa voix,**Et dans la quête de soi, toujours avancer,**Pour enfin renaître dans l'authenticité."
+        },
+        {
+            "theme": "Mémoire",
+            "title": "Une enfance près de la mer",
+            "img": "Une-enfance-pres-de-la-mer.webp",
+            "content": "À la lumière de mes sentiments,**Éclairé par la joie, les mots,**Ne semblent pas assez beaux,**Pour te dire ce que je ressens.\n\nSur une plage immense,**Sous une pluie d’étoiles,**Ces mots attisent et dévoilent,**Tout l’amour d’une enfance.\n\nEnfance que tu as bercée,**Enfance que tu as rassurée,**Enfance résistant au fil des ans,**Enfance qui te doit tellement.\n\nCe jour qui est le tien,**Ces sentiments qui sont les miens,**Cet instant qui est le nôtre,**Partageons-le avec les autres.\n\nPrès du rivage bordé par la mer,**J’écris passionnément ces mots,**Ponctués par mes sourires et les flots,**Je te souhaite un joyeux anniversaire !"
+        },
+        {
+            "theme": "Horizon",
+            "title": "Un reflet de ses voiles",
+            "img": "Un-reflet-de-ses-voiles.webp",
+            "content": "Explorateurs célestes, vagabonds de la nuit,**Témoins silencieux d'un ballet infini,**Sous cette voûte enchantée, nous prions,**Guidés par la lumière des constellations.\n\nUne nuit boréale, un rêve éveillé,**Embrasant l'horizon astral,**Jusqu'à la douce aube pâle,**Les cieux se parent d'un manteau coloré.\n\nSous un ciel polaire, elle danse en secret,**Elle prend sa source parmi les étoiles,**Revêtant des couleurs de toute beauté,**Dans nos iris, un reflet de ses voiles.\n\nLes teintes de mystère d'un rare indigo,**Ces éclats d'émeraude, ces reflets magnéto,**Nous offrent une plongée dans l'univers,**Pour être des cosmonautes de notre terre.\n\nVoyageurs des cieux, vagabonds de la nuit,**Témoins silencieux d'un ballet infini,**Sous cette voûte enchantée, nous rêvons,**Dans l'ancienne lueur des constellations."
+        },
+        {
+            "theme": "Silence",
+            "title": "Une prause",
+            "img": "Une-prause.webp",
+            "content": "Ma prose, tient à peu de chose,**Il fallait évidemment que j’ose,**En mon trajet rencontrer la rose,**Et m’accorder une sereine pause.\n\nAi-je besoin d’écrire plus de choses ?**À quoi simplement rime ma vie,**Entre besoins, idées et envies,**Je me dois absolument une pause.\n\nIl fallait que je trouve ma déclinaison,**Et je n’en suis pas si loin.**Car j’ai trouvé en toi l’abnégation.**Il faut te conjuguer à toutes les saisons."
+        },
+        {
+            "theme": "Horizon",
+            "title": "Vous entendez-vous ?",
+            "img": "Vous-entendez-vous.webp",
+            "content": "Sempiternel, léger et agaçant,**Entendez-vous ce gémissement ?**Celui de la perte douloureuse et immense,**De tous repères et de tous sens.\n\nBillevesées, amalgames et confusions,**Se propagent et germent à profusion.**Compost de mépris, profond replis identitaires,**Cultivent et fertilisent l'esprit réfractaire.\n\nImpasse, contre-sens et erreurs,**Jalonnent un sombre labyrinthe.**Tortueuses tranchées sans lueur,**Les lumières se sont éteintes.\n\nHalte, on ne peut plus s'entendre :**Sous le joug poussiéreux de l'absence,**La raison capitule et fait silence,**L'esprit se conjugue avec méandre.\n\nIci-bas, sévit la tranchante opinion,**Les religions et croyances sont légions.**Dans une cacophonie, bataille existentielle,**L'intellect perd pied, divague, et bat de l'aile.\n\nHonte à qui choisit cette voie !**Perdons-nous à ma manière,**Écoutez ma seule voix,**Promesse d'une nouvelle aire."
+        },
+        {
+            "theme": "Psyché",
+            "title": "Résonances Identitaires",
+            "img": "Resonances-identitaires.webp",
+            "content": "Au-delà des masques, des apparences,**Suivant son rythme, sa cadence,**Cette étrange fusion de personnalités,**Sculpte l'être humain dans sa complexité.\n\nTraversant prisme et poussière,**Elle émerge, pleine et entière,**Dans de rares instants éclatants,**Son essence se dévoile pleinement.\n\nFaçonnant en secret les ébauches de l'âme,**Parmi les obscurs recoins de l'esprit,**Les pensées interdites, innocentes ou infâmes,**Sillonnent la mémoire, où l'histoire se tapis.\n\nAu creux d'une quête incessante,**Elle tisse les fils de nos vies mouvantes,**Explorant les recoins de notre être,**Elle révèle ce qui nous a fait naître.\n\nEntre symphonie et définition,**Dans l'enfer des échos, la raison s'anime,**C’est un chant divin, une partition,**Au-delà des mots, sublime et intime."
+        },
+        {
+            "theme": "Mémoire",
+            "title": "Tout me rappelle",
+            "img": "Tout-me-rappelle.webp",
+            "content": "Ton ombre me hante, jour et nuit,**Un cruel manque m'assombrit,**Un murmure dans chaque recoin,**Amer rappel, tu es si loin.\n\nCe vide déchirant,**Ces caresses latentes,**Ce corps brûlant,**Sensation poignante.\n\nJe comble, navré, ces silences,**Par des souvenirs en errance,**Par de grands rires solitaires,**Résonnant, nostalgiques, dans l'air.\n\nLes jours s'étirent, sans toi, sans répit,**Trop de pensées bien présentes,**Trop de secondes si oppressantes,**Ton absence jamais ne vieillit.\n\nCe vide déchirant,**Ces caresses latentes,**Ce corps brûlant,**Sensation tranchante.\n\nNos endroits ont comme unique sujet,**Les vestiges de nos regards échangés,**Les reliques des moments partagés.**Ils effleurent, ton âme, ici, à jamais."
+        },
+        {
+            "theme": "Espoir",
+            "title": "Malgré les orages",
+            "img": "Malgre-les-orages.webp",
+            "content": "Parmi les souvenirs et les rires enjoués,**L'enfance survit, son fardeau plus léger.**Dans l'ombre douce d'un passé discret,**Résonnent faiblement ses jours délaissés.\n\nSes instants joyeux, bien que lointains,**Resteront des spectres dans nos chemins.**Les sourires de passage et les jeux enjoués,**Se perdent dans les fondations de nos réalités.\n\nLes peines d'antan, dans les mémoires gravées,**Disparaissent dans les nouvelles joies partagées,**Dans le calme des jours, la paix retrouvée,**Se dissipent les ombres de nos vies passées.\n\nLe visage vieillit, dans le miroir du temps,**Se transforment en éclats de diamants.**À chaque souvenir, à chaque sourire croisé,**Nous avançons, calme, le cœur apaisé.\n\nLes rêves candides, tels des flammes dans la nuit,**Alimentent ardemment nos prières et nos envies.**Dans les épreuves, une vérité se dégage,**L'enfant en nous grandit, malgré les orages."
+        },
+        {
+            "theme": "Silence",
+            "title": "Larmes enneigées",
+            "img": "Larmes-enneigees.webp",
+            "content": "La neige et ses flocons recouvrent tendrement,**Les dernières demeures prises dans un vent glacé.**Les noms calligraphiés de ceux qui furent vivants.**Où te trouves-tu, toi, ma douce aimée ?\n\nMes larmes coulent, mon regard devient flou,**Elles tombent et marquent mon passage,**Voici les seules traces de mon voyage,**Où es-tu ? Où te caches-tu ? Je deviens fou…\n\nPeut-être dans le tremolo d'un cristal égaré,**Ou sous la lune, éternelle, entourée de glace.**Ton esprit traverse la brume, dans l'air givré,**Et dans ce blanc manteau, je cherche ta trace.\n\nMe guideras-tu parmi vents et monts,**Vers l'endroit qui porte ton prénom ?**Ma mémoire vacille... et ne suffit plus,**Par milliers, les éléments m'ont vaincu.\n\nMes souvenirs s'effacent, et ainsi ce jour,**Sous ce linceul d'hiver, je te perds mon amour.**Malgré l'envie de prier avec toi, là où tu gis,**Je t’appelle en silence, espérant un doux sursis.\n\nQuand le temps sera clément,**Je te le promets, je serai présent.**Parmi les tombes à foison,**Avec toi pour notre communion."
+        },
+        {
+            "theme": "Rêves",
+            "title": "Libre de poèmes",
+            "img": "Libre-de-poemes.webp",
+            "content": "Toi qui des doigts effleures,**Cet intriguant ouvrage,**Toi qui occupes tes heures,**À tourner pages après pages,\n\nQuoi de mieux, il me semble,**Pour que pousse ta curiosité,**Pour que l'on soit ensemble,**À travers les rimes névrosées.\n\nNe me crois pas expert,**J'écris bien peu de vers,**Et seule ton imagination,**Comblera tes déceptions.\n\nCes mots sont des ailes fragiles,**Pour s'évader des jours futiles.**Tu trouves mes vers un peu fous ?**Rassure-toi, je ne mords pas du tout.\n\nJe n'ai trouvé aucun libraire,**À qui ces textes peuvent plaire.**Dans mon plus beau malheur,**J'ai un unique lecteur.\n\nLibre de poèmes,**Chaîne de mots,**Livre de bohèmes,**Idées à vau-l'eau."
+        },
+        {
+            "theme": "Espoir",
+            "title": "Quel chemin de résilience ?",
+            "img": "Quel-chemin-de-resilience.webp",
+            "content": "Dans l'ombre dense d'un passé terni,**À ma sombre mémoire, je souris.**Laissant sur le bord de ma route,**Les éclats brisés d'une longue déroute.\n\nEt quel que soit le prix qu'il en coûte,**Je trace mon chemin, malgré les doutes,**Aux lueurs d'un avenir infini,**Je crois avoir compris.\n\nDans chaque épreuve, une leçon je lis,**Après chaque assaut je survis.**Dans le tourbillon du temps qui circule,**Frôlant l'abîme, mon être s'articule.\n\nBravant maints et périlleux obstacles,**Parmi mes convictions, mon destin calcule,**Prenant chaque défi comme un spectacle,**Dans la danse infinie des particules.\n\nRenaissant étranger à tous ces cris,**Attaquant, sans l'opportunité d'un répit.**Perdu dans les abysses, je module,**L'intensité des chocs sur ma capsule.\n\nDans chaque bataille, mon âme se débat,**Parmi les affronts, elle se dresse, fière.**Triomphante sur les chemins de croix,**Dans un silence feutré, doux et solitaire."
+        },
+        {
+            "theme": "Nature",
+            "title": "Le soupir de la plume",
+            "img": "Le-soupir-de-la-plume.webp",
+            "content": "La mer érode sur le rivage,**L'essence d'un infime sourire,**Le parfum évanescent d'un rire,**Un mot aux accents de voyage.\n\nSon précieux répertoire,**Rythme nos mémoires.**Il loge en nos cœurs,**Un soupir qui demeure.\n\nPuisant dans le partage,**La plume du soupir,**Parcourt la plage,**Et ravive le mot souvenir.\n\nLa plume parfois sournoise,**Enlace, mêle et croise,**Lie, rive et unit les sens,**En espiègles réminiscences.\n\nEnsemble la plume et la mer,**Commémorent la vie en plein air,**Aux cris de joie les plus beaux,**Encre et vagues font écho."
+        },
+        {
+            "theme": "Amour",
+            "title": "L'ultime souffle de l'amour",
+            "img": "L-ultime-souffle-de-l-amour.webp",
+            "content": "Seuls les regards complices des premières heures,**Révèlent doucement les promesses de bonheur.**Seuls de tendres et lents balbutiements,**Font fleurir une histoire, empreinte de sentiments.\n\nHistoire de deux corps, en harmonie trouvée,**Grâce à un destin, grâce à la force de l'union.**Histoire d'âmes, libres de tout rejet,**Une douce étreinte, les prémices de la dévotion.\n\nSeuls de sincères mots prononcés,**Dans le souffle du partage, deviennent vérités.**Seules les confessions révélées en plein jour,**Renforcent les fondations, cimentent les amours.\n\nDiscussions douces, regards intenses,**Les souvenirs se mêlent, dans l'aisance,**Discussions profondes, sourires partagés,**Les premières paroles d'un couple enlacé."
+        },
+        {
+            "theme": "Horizon",
+            "title": "Un possible",
+            "img": "Un-possible.webp",
+            "content": "Du premier terme au dernier,**Dans tous les sens possibles,**Mes mots contradictoires et fermés,**Limitent ma pensée au possible.\n\nVariés mais redondants au possible,**Il n’est rien qui ne m’est permis,**Car tout en moi se contredit,**Et je m’acharne à la vie.\n\nPoussant d’intenses et hauts cris,**Ils nomment cela folie,**Partout et même là où déraison sévit,**De cet endroit je cherche la sortie.\n\nMon esprit s’abîme à l’abîme,**Et je cherche malgré moi la rime,**En demandant à quoi cela rime,**De ce lieu je suis l’hymne.\n\nEndroit où je remercie les lumières,**Éclairant l’avant et l’arrière,**Elles ciblent les plus sombres recoins,**Et en de violentes pensées je m'y joins.\n\nAux plus lourdes idées de l’existence,**Je lui réponds cent questions,**Et avec mes lourdes abstinences,**Je me demande comment je pense.\n\nJ’imagine les possibles,**Dans la pluralité des réalités,**Les esprits se maudissent à jamais,**Au-devant d’actes impossibles..."
+        },
+        {
+            "theme": "Espoir",
+            "title": "Dans chaque revers",
+            "img": "Dans-chaque-revers.webp",
+            "content": "Dans l'art de la défaite avec honneur,**Par-delà la simple quête de gloire,**Étreindre la chute avec pudeur,**Dans la perte, trouver sa victoire.\n\nAu-delà des feux de la compétition,**Se tenir debout malgré l'adversité,**Loin de toute quête de domination,**Privilégier l'intégrité avec fierté.\n\nDans l'ombre de la défaite, trouver la lumière,**Résister aux sirènes de la vanité,**Loin des artifices, loin de la colère,**Accepter avec grâce la réalité.\n\nDans la perte, une leçon à méditer,**Une voie vers une grandeur d'âme,**Car c'est dans la manière de se relever,**Que se dessine la véritable flamme.\n\nAinsi, dans chaque revers, une opportunité,**De grandir, de s'élever, de se réinventer,**Car la vraie force réside dans la dignité,**Dans la manière de savoir perdre et accepter."
+        },
+        {
+            "theme": "Espoir",
+            "title": "Une raison de vivre",
+            "img": "Une-raison-de-vivre.webp",
+            "content": "Ce son déchirant d’une âme brisée,**Ce puissant cri dans la voûte étoilée,**Cet appel résonnant dans le lointain,**Pour une vie qui lui glisse des mains.\n\nCet effroi, si vivant de la perte,**Ce froid, si intense de l’oubli,**Ses vaines tentatives expertes,**Pour, de force, lui insuffler la vie.\n\nCet instant cruel s’éternise,**Cette âme impuissante s’étiole.**Ces battements, son cœur s’affolent,**Pour ceux de sa belle promise.\n\nSes yeux vides de couleur,**Sa peau d’une terrible pâleur,**Son regard perdu dans le ciel,**Pour lui il n’y avait qu’elle.\n\nCet espace, emplit de silence,**Cet endroit clos, étouffant,**Son corps exténué s’allongeant,**Seule sa voix s’élance.\n\nSes sanglots, plein de haine,**Ce chagrin, dont il est ivre,**Son esprit, assiégé par la peine,**Cherche une raison de vivre."
+        },
+        {
+            "theme": "Mémoire",
+            "title": "L'être du début",
+            "img": "L-etre-du-debut.webp",
+            "content": "Dans l'éclat changeant du passé révélé,**S'entrelacent l'enfance et ses vérités.**Des instants candides, des bonheurs persistants,**Éclairent les jours sombres de leurs chants.\n\nLes rires éclatants dans les maisonnées,**Se heurtent aux pleurs de nuits tourmentées.**Les rêves radieux et les jeux insouciants,**Masquent parfois des peines d'enfant.\n\nAu cœur du tumulte où les mots s'égarent,**Les quolibets s'éteignent, loin de la clarté.**Dans l'étreinte franche des amis présents,**Se trouve la clé des cœurs vaillants.\n\nLes saisons passent, les corps grandissent,**Les épreuves forgent, les âmes se polissent.**La douce candeur mue en un âge de raison,**Avec un bagage de peines en floraison.\n\nChaque pas vers l'avenir est un mélange,**De souvenirs dorés et de défis étranges.**Les contours de l'enfance restent en suspens,**Et le futur demeure en arrière-plan.\n\nLes rêves d'autrefois guident les choix,**Les erreurs passées jalonnent les voies.**À ce moment, une profonde vérité se dégage,**L'enfant en nous éclaire notre passage."
+        },
+        {
+            "theme": "Rêves",
+            "title": "La réalité se dérobe",
+            "img": "La-realite-se-derobe.webp",
+            "content": "Dans les salles du septième art,**Les écrans nous donnent à voir,**Des films étranges, au-delà du réel,**Bravant l'impossible et l'éternel.\n\nLes yeux rivés sur des personnages,**Avec des idées semblables aux nôtres,**Dans de nouveaux et étranges rivages,**Ils traversent la vie comme nous autres.\n\nEntre réalité et étonnante fiction,**Les frontières entrent en fusion.**Toute ressemblance à ce héros fictif,**Éveille en nous des souvenirs furtifs.\n\nDans cette salle confortable et obscure,**Ils osent parfois briser le quatrième mur,**Nous plongeant au cœur d'un univers,**Où la fiction s'exprime et nous éclaire.\n\nDans ce lieu où les rêves prennent vie,**Chaque image est une invitation à l'infini,**Un voyage au-delà des limites connues,**Explorant des mondes où tout est suspendu.\n\nMais derrière ces images flamboyantes,**Se cachent des peurs et des tourmentes,**L'éclat de l'espoir, l'ombre de la crainte,**Dans cet océan d'émotions feintes.\n\nQuand reviennent les lumières,**Quand l'écran doucement s'assombrit,**Quand la réalité se fait familière,**La fiction murmure en notre esprit."
+        },
+        {
+            "theme": "Création",
+            "title": "Littéraire sans manière",
+            "img": "Litteraire-sans-maniere.webp",
+            "content": "J'ai un côté littéraire,**J'écris de belles rimes claires.**Pour me soustraire des ennuis,**Je chante les plaisirs de la vie.\n\nDans mes paroles, je trouve l'évasion,**Un refuge pour mon imagination.**Je peins en mots les jours ensoleillés,**Et je danse dans les rêves étoilés.\n\nÀ travers les lignes de mes vers,**Je capture la beauté de l'univers.**Les mots sont mes complices fidèles,**Qui chassent les ombres et les querelles.\n\nJ'ai un côté littéraire,**J'écris de belles rimes claires.**Pour me soustraire des ennuis,**Je chante les plaisirs de la vie.\n\nEt toi qui me parles à travers ma vérité,**Ressens tu dans la vie le frisson ?**Et toi qui m'invites à la création,**Je cherche le couplet parfait.\n\nDans l'onde des mots, je navigue sans fin,**Capturant chaque écho, chaque refrain.**La plume danse, légère et sincère,**Tissant l'histoire de ma lumière."
+        },
+        {
+            "theme": "Création",
+            "title": "La tension de l'artiste",
+            "img": "La-tension-de-l-artiste.webp",
+            "content": "Exposée, nue, elle pose,**Regarder, moi, je n'ose,**Devant des courbes délicates,**Nos joues, deviennent écarlates.\n\nLe regard lourd d'intensité,**D'élégant gestes mesurés,**Cet été, elle est notre muse,**Devant nous, confuse.\n\nInspirant nos mains hésitantes,**Nos pensées, toutes vacillantes,**Elle incarne la beauté parfaite,**L'art vivant, l'image muette.\n\nProfusion d'émotions dissimulées,**Derrière des regards accrochés,**Avec chaque coup de pinceau,**Elle révèle un monde nouveau.\n\nRésister devient difficile,**Un univers sensuel se profile,**La voir tout près de moi,**Sera mon unique combat."
+        },
+        {
+            "theme": "Rêves",
+            "title": "Les esquisses de mes aspirations",
+            "img": "Les-esquisses-de-mes-aspirations.webp",
+            "content": "Dans le silence fécond des rêves murmurés,**À l'église prospère de nos souhaits établis,**Chaque prière, une voûte, chaque espoir, un pilier,**Résolument, je prospère sur de fertiles envies.\n\nLes ébauches, légions dans mes ambitions,**Se projettent, secrètes, en uniques conceptions.**Mes projets, singuliers, se tassent en mon atelier,**Aux sciences nouvelles, à tout instant, dédiés.\n\nJ'aime me perdre dans les confins stellaires,**Mes doigts croisés, pointent alors la Voie lactée.**Astres en tout genre, entourés d'antiques mystères,**A travers l'immensité, source de tous mes sujets.\n\nMon choix se porte sur un coin d'humanité,**Les énigmes de l'âme arrivent avec spontanéité,**Dois-je joindre ce thème à mon exploration ?**Avec circonvolution, je jalonne les interdictions.\n\nEn un point final à mes interrogations rebelles,**En des rimes fines, qui auront tous les potentiels,**Pour aborder chaque motif, chaque inspiration,**Et les plus extravagantes des émotions."
+        },
+        {
+            "theme": "Amour",
+            "title": "Pour la première fois...",
+            "img": "Pour-la-premiere-fois.webp",
+            "content": "Iris à Iris,\n\nAttention ils se hissent,**L’un et l’autre tendrement,**Au rôle d’amants.\n\nCaresses après caresses,\n\nSans que rien ne cesse,**Ils cultivent la foi de l’autre,**Faisant d’eux même des apôtres.\n\nIdées après idées,\n\nC’est une religion guidée,**Pour la joie que l’on se procure,**Qui organise sa propre filature.\n\nDanses après Danses,\n\nC’est celle que personne ne pense,**Car elle se fuit elle-même,**Comme un tout de même.\n\nInstantané dans l’avenir,\n\nPhoto qui traverse les temps à venir,**Bouteille jetée dans l’oublie,**Un souvenir qui jamais ne périt."
+        },
+        {
+            "theme": "Espoir",
+            "title": "Un début inattendu",
+            "img": "Un-debut-inattendu.webp",
+            "content": "D’un à un, mes mots tranquilles,**Pour nos paroles qui s’affirment,**Pour des idées qui me réaniment,**Se glissent dans nos sentiments agiles.\n\nMoi, n’étant que le vent du matin,**Toi, mon espoir, mon unique horizon,**Nous qui n’étions plus qu’incertain,**Nous avions cette foi, plus que de raison.\n\nLe lien de nos êtres,**Le souffle de nos âmes,**L’abîme des rêves,**La force des flammes.\n\nCelle qui éclaire plus que de raison,**Celle qui nous lie dans l’unisson,**À vif, nous la suivons, pleinement,**Voici, doux, l’avenir, à l'ombre du présent.\n\nD’un à un, ces mots pleins nous rapprochent,**Regardant notre avenir, ils nous accrochent,**Dans un ciel infini, sans fin,**Je vois maintenant cet instant divin.\n\nSur un passé léger de danse,**Des promesses nouvelles et sincères,**Devant toutes circonstances,**Se déploient lentement dans l’air.\n\nPourquoi, pour qui, comment ?**Nos cœurs battent à l’unisson,**Guidés par un nouvel élan,**Vers l’horizon, nous avançons.\n\nSous une douce lumière de l’aube naissante,**Avec un écho tendre de cathédrale,**Voici nos paroles franches et vaillantes,**Posant le premier souffle de notre idéal.\n\nCela semble sans fin,**Cela sera bien nous.**Cela nous absout,**De tout chagrin.\n\nLe début me semble éclatant,**La fin lointaine, douce chimère.**Cet absolu, je veux y croire tant,**Dans une relation si légère.\n\nCroisant tes yeux pour la centième fois,**Mains jointes, douce tendresse,**Celle qui rit et avec qui tout progresse,**Étreinte joyeuse, nouveaux émois.\n\nUn pas convergeant, et tes contours s’éclairent,**Un air harmonieux, et nos paroles s’embrasent.**Je vois maintenant le temps qui s’étend,**Et les secondes qui nous enlacent."
+        },
+        {
+            "theme": "Silence",
+            "title": "Une fin familière",
+            "img": "Une-fin-familiere.webp",
+            "content": "D’un à un, mes mots avides,**Pour nos paroles qui ne s’assument,**Pour des idées qui me consument,**S’emmêlent dans nos sentiments livides.\n\nMoi, n’étant que de la destinée, le pantin,**Toi, mon avenir, mon unique abandon,**Nous, qui n’étions un peu plus que rien.**Nous avions cette foi, plus que de raison.\n\nLe lien de nos êtres,**Le puit de nos âmes,**L’abysse du paraître,**La peur de la lame.\n\nCelle qui tranche plus que de raison,**Celle qui nous voit plus à l’unisson,**À vif, nous la subirons, lentement,**Voici, cruel, l’avenir, devant le présent.\n\nD’un à un, ces mots vides m’éloignent.**Regardant notre future, ils m’empoignent,**Dans une crevasse béante sans fond,**Je vois maintenant cet instant si profond.\n\nSur un passé lourd d’errance,**Des demandes futiles et légères,**Devant toutes circonstances,**Se répandent lentement dans l’air.\n\nPourquoi, pour qui, comment ?**Sans plus aucune voix,**Sans plus aucune croix.**Nous voit-on encore errants ?\n\nSous une douce lumière de fin du jour,**Avec un silence sourd de cathédrale,**Voilà nos balbutiements en un râle,**Mettant le point final sur notre amour.\n\nCela semble sans fin,**Cela ne sera pas nous.**Cela ne nous absout,**D’aucun quatrain.\n\nLe début me semble étranger,**La fin pénible mais si familière.**Cet absolu je ne peux y déroger,**Dans une relation si aventurière.\n\nCroisant tes yeux pour la première fois,**Caresses hésitantes, dernière tendresse,**Celle qui souffre et avec qui tout cesse,**Étreinte douloureuse, derniers émois.\n\nUn pas divergeant, et tes contours s’effacent,**Un air dissonant, et nos paroles s’envolent.**Je vois maintenant le temps qui passe,**Et les secondes qui te volent."
+        },
+        {
+            "theme": "Temps",
             "title": "Les Aiguilles du Souvenir",
             "img": "Les-aiguilles-du-souvenir.webp",
             "content": "Me voila des a présent à l'écoute du temps,**Celui qui passe, celui qui s'arrête parfois, **Le passé se décrit en une unique voie.**Le future se compose de murmures attrayant.\n\nPlus j'avance a tâtons dans ma découverte**Plus je sonde aveuglement mon expérience,**Plus je défie l'ombre qui m'observe en silence,**Je réalise que chaque seconde est offerte.\n\nRevenir sur les instants précieux de ma vie,**Comme un film que l'on visionne a nouveau,**Les éclats de joie, les larmes, les maux,**Tissent une trame en moi, en mon esprit.\n\nDans cette horloge aux aiguilles inversées,**Chaque tic résonne d’un souvenir chuchoté,**Un instant où passé et futur se confondent,**Dans une boucle où le temps jamais n’abonde.\n\nDans l’infini des heures, je cherche un repère,**Un refuge où s’éteignent les tourments amers.**Chaque battement d’horloge devient écho,**D’un désir de saisir l’éphémère au galop.\n\nPeut-on figer l’instant d’un simple regard,**Ou briser l’horloge pour un départ ?**Je tends ma main vers les aiguilles endormies,**Espérant toucher l'éternité infinie."
         },
         {
-            "theme":"Création",
+            "theme": "Création",
             "title": "Je vais écrire",
             "img": "Je-vais-ecrire.webp",
-            "content":"Pour voir au-delà des mots,**Se satisfaire et aller de l’avant.**Pour ressentir à nouveau,**L’être qui fut en moi l’enfant.\n\nPour me faire passer le temps,**Faire quelque chose en attendant.**Pour la mélancolie et la nostalgie,**Cette absence, ce vide ressenti.\n\nDe sens mon écriture est dénuée,**Elle va, enfantine et revient vieillard,**Doucement elle s’engage à l’art,**Pour des mots bien placés, je vais m’abîmer.\n\nÉcrire pour qui pour quoi ?**Ces mots, que tu lis, sont déjà tiens**Il suffit d’un instant, d’un rien,**Pour qu’ils soient force de loi.\n\nQuelle direction, quelle envie ?**Pour qu’à tes yeux ils prennent vie,**Écrire est ce créer ou faire exister,**De différentes et nombreuses réalités ?\n\nEntre mémoire et souvenirs,**Entre présages et avenir**Entre ratures et essais**Ma main ne fait que trembler."
+            "content": "Pour voir au-delà des mots,**Se satisfaire et aller de l’avant.**Pour ressentir à nouveau,**L’être qui fut en moi l’enfant.\n\nPour me faire passer le temps,**Faire quelque chose en attendant.**Pour la mélancolie et la nostalgie,**Cette absence, ce vide ressenti.\n\nDe sens mon écriture est dénuée,**Elle va, enfantine et revient vieillard,**Doucement elle s’engage à l’art,**Pour des mots bien placés, je vais m’abîmer.\n\nÉcrire pour qui pour quoi ?**Ces mots, que tu lis, sont déjà tiens**Il suffit d’un instant, d’un rien,**Pour qu’ils soient force de loi.\n\nQuelle direction, quelle envie ?**Pour qu’à tes yeux ils prennent vie,**Écrire est ce créer ou faire exister,**De différentes et nombreuses réalités ?\n\nEntre mémoire et souvenirs,**Entre présages et avenir**Entre ratures et essais**Ma main ne fait que trembler."
         },
         {
-            "theme":"Amour",
+            "theme": "Amour",
             "title": "Le murmure suspendu",
             "img": "Le-murmure-suspendu.webp",
-            "content":"J’aurais dû te le dire parfois sans aucune raison,**Mais mes mots tremblaient sous l'ombre de la saison.**Ils s’éteignaient dans un souffle, hésitants,**Comme un frisson perdu au bord d’un instant...\n\nCe que je garde au plus profond de mon âme,**Un feu discret, brûlant sous ma peau qui s'enflamme.**Ce secret effleure mes lèvres, fragile,**Oseras-tu écouter mon aveu subtil ?\n\nUn murmure suspendu, effleurant l’éternité,**Ce pourquoi mes nuits, souvent, sont hantées.**Un éclat fugace, une vérité silencieuse,**Je ne peux plus t'aimer d'une amitié précieuse.\n\nMon esprit vacille sous le poids de ton regard,**Ta chaleur m'enveloppe, douce et hagarde.**Il me faut céder, d’un souffle à peine,**À ces sentiments qui doucement m’enchaînent.\n\nCela ne prend qu’un soupir, une brise légère,**Mais ces mots, si lourds, hésitent dans l’air.**Malgré la crainte d’un sourire ou d’un éclat,**Ils auraient dû naître avant, pourquoi pas.\n\nEt te voilà maintenant, frissonnante,**Un éclat rosé effleurant ta joue vacillante.**Tes yeux se mêlent aux miens, hésitants,**La décision s’impose, le présent devient pesant.\n\nUn murmure suspendu, effleurant l’éternité,**Ce pourquoi mes jours, à présent, sont portés.**Non plus une absence, ni un doute infini,**Mais un espoir, à deux, d’un chemin éclairci.\n\nJe vois maintenant un sourire qui se dessine,**Tes yeux s'animent et doucement s'illuminent,**Une chaleur nouvelle semble éclairer l’horizon,**Cet un rayon d’aube, qui accompagne une floraison.\n\nCes instants fragiles, suspendus dans l’air,**Liant nos cœurs d’un souffle léger, sincère.**Plus de murmures, plus d’ombres à franchir,**Juste un élan partagé, une envie de frémir.\n\nEt si nos voix tremblaient à l’orée du chemin,**Nos âmes, désormais, s'accorde dans le refrain.**Un murmure devient promesse dans l’éclat,**Un espoir éternel qui ne vacillera pas.\n\nTon murmure suspendu, effleurant l’éternité,**Ce pourquoi tes nuits, souvent, sont hantées.**Les barrières tombent, les doutes s’effacent,**Un amour prend tendrement sa place.\n\n"
+            "content": "J’aurais dû te le dire parfois sans aucune raison,**Mais mes mots tremblaient sous l'ombre de la saison.**Ils s’éteignaient dans un souffle, hésitants,**Comme un frisson perdu au bord d’un instant...\n\nCe que je garde au plus profond de mon âme,**Un feu discret, brûlant sous ma peau qui s'enflamme.**Ce secret effleure mes lèvres, fragile,**Oseras-tu écouter mon aveu subtil ?\n\nUn murmure suspendu, effleurant l’éternité,**Ce pourquoi mes nuits, souvent, sont hantées.**Un éclat fugace, une vérité silencieuse,**Je ne peux plus t'aimer d'une amitié précieuse.\n\nMon esprit vacille sous le poids de ton regard,**Ta chaleur m'enveloppe, douce et hagarde.**Il me faut céder, d’un souffle à peine,**À ces sentiments qui doucement m’enchaînent.\n\nCela ne prend qu’un soupir, une brise légère,**Mais ces mots, si lourds, hésitent dans l’air.**Malgré la crainte d’un sourire ou d’un éclat,**Ils auraient dû naître avant, pourquoi pas.\n\nEt te voilà maintenant, frissonnante,**Un éclat rosé effleurant ta joue vacillante.**Tes yeux se mêlent aux miens, hésitants,**La décision s’impose, le présent devient pesant.\n\nUn murmure suspendu, effleurant l’éternité,**Ce pourquoi mes jours, à présent, sont portés.**Non plus une absence, ni un doute infini,**Mais un espoir, à deux, d’un chemin éclairci.\n\nJe vois maintenant un sourire qui se dessine,**Tes yeux s'animent et doucement s'illuminent,**Une chaleur nouvelle semble éclairer l’horizon,**Cet un rayon d’aube, qui accompagne une floraison.\n\nCes instants fragiles, suspendus dans l’air,**Liant nos cœurs d’un souffle léger, sincère.**Plus de murmures, plus d’ombres à franchir,**Juste un élan partagé, une envie de frémir.\n\nEt si nos voix tremblaient à l’orée du chemin,**Nos âmes, désormais, s'accorde dans le refrain.**Un murmure devient promesse dans l’éclat,**Un espoir éternel qui ne vacillera pas.\n\nTon murmure suspendu, effleurant l’éternité,**Ce pourquoi tes nuits, souvent, sont hantées.**Les barrières tombent, les doutes s’effacent,**Un amour prend tendrement sa place.\n\n"
         }
     ]
 }

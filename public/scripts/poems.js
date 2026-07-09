@@ -125,16 +125,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const slideWrapper = document.querySelector(".swiper-wrapper");
         
-        data.poems.forEach(poem => {
+        data.poems.forEach((poem, index) => {
 
             // append option in poemList
-            let allOptions = document.querySelectorAll("li[class='sidebar-title-link']");
             let poemList = document.querySelector("#poemList");
             let li = document.createElement("li");
 
             li.classList.add("sidebar-title-link");
-            li.setAttribute("selected", "false");
-            li.setAttribute("data-index", parseInt( allOptions.length != 0 ?  allOptions[allOptions.length - 1].getAttribute("data-index") : 0) + 1) ;
+            if (index === 0) {
+                li.classList.add("sidebar-title-selected");
+            }
+            li.setAttribute("selected", index === 0 ? "true" : "false");
+            li.setAttribute("data-index", index);
             li.setAttribute("data-theme", poem.theme );
             li.innerHTML = (poem.title == undefined || poem.title == "") ? "Pas de titre" : poem.title;
             
