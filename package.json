@@ -5,6 +5,7 @@
     "swiper": "^14.0.2"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node --test test-poem-creation.js"
   }
 }

@@ -99,13 +99,29 @@
         <div class="container mt-5">
           <form id="poemCreationForm" class="bg-light p-4 rounded shadow">
             <div class="mb-3">
-              <input type="text" class="form-control" id="poemTitle" placeholder="Quel est le titre du poèmes">
+              <input type="text" class="form-control" id="poemTitle" placeholder="Quel est le titre du poème" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-control" id="poemTheme" required>
+                <option value="Création" selected>Création</option>
+                <option value="Amour">Amour</option>
+                <option value="Nature">Nature</option>
+                <option value="Rêves">Rêves</option>
+                <option value="Mémoire">Mémoire</option>
+                <option value="Horizon">Horizon</option>
+                <option value="Silence">Silence</option>
+                <option value="Temps">Temps</option>
+                <option value="Espoir">Espoir</option>
+                <option value="Psyché">Psyché</option>
+                <option value="Science">Science</option>
+              </select>
             </div>
             <div class="mb-3" id="quatrainsContainer">
               <textarea class="form-control mb-2 quatrain" id="quatrain1" rows="4" placeholder="Écrivez le premier quatrain..."></textarea>
             </div>
             <button type="button" id="addQuatrainButton" class="btn btn-secondary mb-3">Ajouter un autre quatrain</button>
             <button type="submit" id="createPoemButton" class="btn btn-primary mb-3">Créer</button>
+            <div id="poemCreationMessage" class="mt-2" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
