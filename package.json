@@ -2,7 +2,7 @@
   "dependencies": {
     "express": "^4.21.1",
     "path": "^0.12.7",
-    "swiper": "^11.1.14"
+    "swiper": "^14.0.2"
   },
   "scripts": {
     "start": "node app.js"

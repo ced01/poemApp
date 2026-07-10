@@ -437,10 +437,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if( query == "" ){
                 document.getElementById("searchPoemInput").removeAttribute("disabled");
                 showElement(document.getElementById('randomPoemButton'));
-                showElement(document.getElementsByClassName("choose-theme")[0]);
             }else {
                 hideElement(document.getElementById('randomPoemButton'));
-                hideElement(document.getElementsByClassName("choose-theme")[0]);
             }
 
 
@@ -474,10 +472,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if(query == ""){
                 document.getElementById("searchTitleInput").removeAttribute("disabled");
                 showElement(document.getElementById('randomPoemButton'));
-                showElement(document.getElementsByClassName("choose-theme")[0]);
             }else {
                 hideElement(document.getElementById('randomPoemButton'));
-                hideElement(document.getElementsByClassName("choose-theme")[0]);
             }
             
         });
